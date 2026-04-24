@@ -10,8 +10,8 @@
 - [ ] Bootstrap Variables & SASS
 - [ ] Customizing Colors & Components
 - [ ] Responsive Utilities
-- [ ] Bootstrap Official Docs
-- [ ] W3Schools Bootstrap
+- [ ] [Bootstrap Official Docs](https://getbootstrap.com/docs/)
+- [ ] [W3Schools Bootstrap](https://www.w3schools.com/bootstrap4/)
 
 ## 📝 Detailed Notes
 > Add your notes and code snippets here.

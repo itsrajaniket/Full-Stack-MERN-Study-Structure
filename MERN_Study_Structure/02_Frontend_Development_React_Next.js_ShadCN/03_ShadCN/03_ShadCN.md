@@ -5,7 +5,7 @@
 - [ ] Using UI Components (Button, Card, Dialog, Forms, Tables, etc.)
 - [ ] Customizing Components (Theming & Styling)
 - [ ] Using with Tailwind CSS
-- [ ] ShadCN Docs
+- [ ] [ShadCN Docs](https://ui.shadcn.com/docs)
 
 ## 📝 Detailed Notes
 > Add your notes and code snippets here.

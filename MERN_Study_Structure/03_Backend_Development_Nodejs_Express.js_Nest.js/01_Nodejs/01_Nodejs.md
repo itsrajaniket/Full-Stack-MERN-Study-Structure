@@ -1,9 +1,9 @@
 # Node.js
 
 ## 📚 Curriculum Checklist
-- [ ] Node.js Fundamentals
+- [ ] [Node.js](https://nodejs.org/docs/latest/api/) Fundamentals
 - [ ] Introduction to Node.js & NPM/Yarn
-- [ ] Node.js Modules (CommonJS vs. ES Modules)
+- [ ] [Node.js](https://nodejs.org/docs/latest/api/) Modules (CommonJS vs. ES Modules)
 - [ ] Asynchronous JavaScript (Callbacks, Promises, Async/Await)
 - [ ] Event Loop & Streams
 - [ ] File System (fs module)

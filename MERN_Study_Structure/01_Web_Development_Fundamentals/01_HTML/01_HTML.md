@@ -6,8 +6,8 @@
 - [ ] Forms (Inputs, Buttons, Textareas, Checkboxes, Radio Buttons)
 - [ ] Semantic HTML (header, nav, article, section, aside, footer)
 - [ ] Meta Tags & SEO Basics
-- [ ] MDN Web Docs - HTML  (Official Documentation)
-- [ ] W3Schools - HTML
+- [ ] [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)  (Official Documentation)
+- [ ] [W3Schools - HTML](https://www.w3schools.com/html/)
 
 ## 📝 Detailed Notes
 > Add your notes and code snippets here.

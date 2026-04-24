@@ -12,8 +12,8 @@
 - [ ] Responsive Design – sm, md, lg, xl, 2xl
 - [ ] Dark Mode Support
 - [ ] Animation & Transitions
-- [ ] Tailwind CSS Official Docs (Best reference)
-- [ ] Tailwind CSS (Video Tutorial)
+- [ ] [Tailwind CSS](https://tailwindcss.com/docs) Official Docs (Best reference)
+- [ ] [Tailwind CSS](https://tailwindcss.com/docs) (Video Tutorial)
 
 ## 📝 Detailed Notes
 > Add your notes and code snippets here.

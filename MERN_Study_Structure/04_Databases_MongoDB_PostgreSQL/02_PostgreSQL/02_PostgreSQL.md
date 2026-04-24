@@ -2,7 +2,7 @@
 
 ## 📚 Curriculum Checklist
 - [ ] Introduction to SQL & PostgreSQL
-- [ ] PostgreSQL Installation & Setup
+- [ ] [PostgreSQL](https://www.postgresql.org/docs/) Installation & Setup
 - [ ] Data Types in PostgreSQL (INT, VARCHAR, TEXT, JSON, etc.)
 - [ ] Connecting PostgreSQL with Node.js (pg, Prisma, TypeORM)
 

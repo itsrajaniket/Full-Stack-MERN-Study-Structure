@@ -8,8 +8,8 @@
 - [ ] State Management – Context API, Redux Toolkit (optional)
 - [ ] API Handling – Fetch, Axios, React Query
 - [ ] Performance Optimization – Memoization, Lazy Loading
-- [ ] React Docs
-- [ ] React Tutorial (Video)
+- [ ] [React Docs](https://react.dev/reference/react)
+- [ ] [React Tutorial](https://react.dev/learn) (Video)
 
 ## 📝 Detailed Notes
 > Add your notes and code snippets here.

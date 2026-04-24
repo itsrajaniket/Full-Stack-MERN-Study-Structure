@@ -2,7 +2,7 @@
 
 ## 📚 Curriculum Checklist
 - [ ] Introduction to NoSQL & MongoDB
-- [ ] MongoDB Installation & Setup
+- [ ] [MongoDB](https://www.mongodb.com/docs/manual/) Installation & Setup
 - [ ] JSON & BSON Basics
 - [ ] Connecting MongoDB with Node.js (Mongoose/NestJS TypeORM)
 - [ ] Creating Databases & Collections
@@ -18,7 +18,7 @@
 - [ ] Embedding vs. Referencing ($lookup for Joins)
 - [ ] Transactions in MongoDB
 - [ ] Schema Validation
-- [ ] MongoDB Atlas (Cloud Database)
+- [ ] [MongoDB](https://www.mongodb.com/docs/manual/) Atlas (Cloud Database)
 - [ ] Replication & Sharding (Basic Understanding)
 - [ ] Security Best Practices
 

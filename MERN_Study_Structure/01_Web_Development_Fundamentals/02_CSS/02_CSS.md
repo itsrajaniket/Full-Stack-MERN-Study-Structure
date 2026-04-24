@@ -7,8 +7,8 @@
 - [ ] Positioning (Relative, Absolute, Fixed, Sticky)
 - [ ] Media Queries (Responsive Design)
 - [ ] Transitions & Animations
-- [ ] MDN Web Docs - CSS (Official Documentation)
-- [ ] W3Schools - CSS
+- [ ] [MDN Web Docs - CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) (Official Documentation)
+- [ ] [W3Schools - CSS](https://www.w3schools.com/css/)
 
 ## 📝 Detailed Notes
 > Add your notes and code snippets here.

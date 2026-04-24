@@ -1,7 +1,7 @@
 # Authentication & Security
 
 ## 📚 Curriculum Checklist
-- [ ] JWT Authentication with Passport.js
+- [ ] [JWT Authentication](https://jwt.io/introduction/) with Passport.js
 - [ ] Role-Based Access Control (RBAC)
 - [ ] Hashing Passwords (bcrypt)
 - [ ] Security Best Practices (CORS, Helmet, Rate Limiting)

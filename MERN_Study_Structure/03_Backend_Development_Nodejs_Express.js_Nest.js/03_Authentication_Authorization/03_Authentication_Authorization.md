@@ -1,7 +1,7 @@
 # Authentication & Authorization
 
 ## 📚 Curriculum Checklist
-- [ ] JWT Authentication (jsonwebtoken)
+- [ ] [JWT Authentication](https://jwt.io/introduction/) (jsonwebtoken)
 - [ ] OAuth & Google/Facebook Login (Passport.js)
 - [ ] Role-Based Access Control (RBAC)
 - [ ] Session & Cookie Management

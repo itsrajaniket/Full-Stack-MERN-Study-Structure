@@ -6,8 +6,8 @@
 - [ ] Data Fetching – getServerSideProps, getStaticProps, API Routes
 - [ ] Middleware & Authentication – NextAuth.js
 - [ ] Optimizations – Image Optimization, ISR, SSR, CSR
-- [ ] Next.js Official Docs
-- [ ] Next.js Tutorial (Video)
+- [ ] [Next.js Official Docs](https://nextjs.org/docs)
+- [ ] [Next.js Tutorial](https://nextjs.org/learn) (Video)
 
 ## 📝 Detailed Notes
 > Add your notes and code snippets here.
