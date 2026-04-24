@@ -16,44 +16,36 @@ Welcome to your personal **MERN Stack Masterclass** study plan. This dashboard i
 
 ## 🗺️ Visual Learning Map
 ```mermaid
-graph TD
+graph LR
     subgraph "Phase 1: Fundamentals"
-        A[Web Development Fundamentals] --> HTML[HTML5]
+        A[Fundamentals] --> HTML[HTML5]
         HTML --> CSS[CSS3]
-        CSS --> JS[JavaScript]
-        JS --> TS[TypeScript]
-        TS --> Git[Git & GitHub]
+        CSS --> JS[JS/TS]
     end
 
-    subgraph "Phase 2: Frontend Mastery"
-        Git --> React[React.js]
-        React --> Next[Next.js]
-        Next --> ShadCN[ShadCN UI]
+    subgraph "Phase 2: Frontend"
+        JS --> React[React/Next]
+        React --> ShadCN[ShadCN]
     end
 
-    subgraph "Phase 3: Backend & APIs"
-        ShadCN --> Node[Node.js]
-        Node --> Express[Express.js]
-        Express --> Auth[Authentication]
-        Auth --> Nest[Nest.js]
+    subgraph "Phase 3: Backend"
+        ShadCN --> Node[Node/Express]
+        Node --> Nest[Nest.js]
     end
 
-    subgraph "Phase 4: Database Management"
-        Nest --> Mongo[MongoDB]
-        Nest --> Postgre[PostgreSQL]
-        Mongo --> Prisma[Prisma/TypeORM]
-        Postgre --> Prisma
+    subgraph "Phase 4: Database"
+        Nest --> DB[MongoDB/Postgre]
     end
 
-    subgraph "Phase 5: Real-World Deployment"
-        Prisma --> Project[Final Project]
-        Project --> Deploy[Deployment]
+    subgraph "Phase 5: Launch"
+        DB --> Project[Final Project]
+        Project --> Deploy[Deploy]
     end
 
     style A fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     style React fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     style Node fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-    style Mongo fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style DB fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     style Project fill:#e1f5fe,stroke:#01579b,stroke-width:2px
 ```
 
