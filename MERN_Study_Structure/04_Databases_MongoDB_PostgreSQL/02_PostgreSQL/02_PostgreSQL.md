@@ -1,10 +1,10 @@
 # PostgreSQL (Relational Database)
 
 ## 📚 Curriculum Checklist
-- [ ] Introduction to SQL & PostgreSQL
-- [ ] [PostgreSQL](https://www.postgresql.org/docs/) Installation & Setup
-- [ ] Data Types in PostgreSQL (INT, VARCHAR, TEXT, JSON, etc.)
-- [ ] Connecting PostgreSQL with Node.js (pg, Prisma, TypeORM)
+- [x] Introduction to SQL & PostgreSQL
+- [x] [PostgreSQL](https://www.postgresql.org/docs/) Installation & Setup
+- [x] Data Types in PostgreSQL (INT, VARCHAR, TEXT, JSON, etc.)
+- [x] Connecting PostgreSQL with Node.js (pg, Prisma, TypeORM)
 
 ## 📝 Detailed Notes
 
@@ -60,7 +60,7 @@ A rule that ensures all values in a column (or a set of columns) are distinct fr
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 

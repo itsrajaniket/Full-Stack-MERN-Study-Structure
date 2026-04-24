@@ -1,26 +1,26 @@
 # MongoDB (NoSQL Database)
 
 ## 📚 Curriculum Checklist
-- [ ] Introduction to NoSQL & MongoDB
-- [ ] [MongoDB](https://www.mongodb.com/docs/manual/) Installation & Setup
-- [ ] JSON & BSON Basics
-- [ ] Connecting MongoDB with Node.js (Mongoose/NestJS TypeORM)
-- [ ] Creating Databases & Collections
-- [ ] Insert Operations: insertOne(), insertMany()
-- [ ] Read Operations: find(), findOne(), Query Operators ($eq, $gt, $lt, $in, $regex, etc.)
-- [ ] Update Operations: updateOne(), updateMany(), $set, $push, $pull
-- [ ] Delete Operations: deleteOne(), deleteMany()
-- [ ] Indexing (createIndex())
-- [ ] Compound Indexes
-- [ ] Aggregation Framework ($match, $group, $lookup, $sort, $project)
-- [ ] Relationships in MongoDB
-- [ ] One-to-One, One-to-Many, Many-to-Many
-- [ ] Embedding vs. Referencing ($lookup for Joins)
-- [ ] Transactions in MongoDB
-- [ ] Schema Validation
-- [ ] [MongoDB](https://www.mongodb.com/docs/manual/) Atlas (Cloud Database)
-- [ ] Replication & Sharding (Basic Understanding)
-- [ ] Security Best Practices
+- [x] Introduction to NoSQL & MongoDB
+- [x] [MongoDB](https://www.mongodb.com/docs/manual/) Installation & Setup
+- [x] JSON & BSON Basics
+- [x] Connecting MongoDB with Node.js (Mongoose/NestJS TypeORM)
+- [x] Creating Databases & Collections
+- [x] Insert Operations: insertOne(), insertMany()
+- [x] Read Operations: find(), findOne(), Query Operators ($eq, $gt, $lt, $in, $regex, etc.)
+- [x] Update Operations: updateOne(), updateMany(), $set, $push, $pull
+- [x] Delete Operations: deleteOne(), deleteMany()
+- [x] Indexing (createIndex())
+- [x] Compound Indexes
+- [x] Aggregation Framework ($match, $group, $lookup, $sort, $project)
+- [x] Relationships in MongoDB
+- [x] One-to-One, One-to-Many, Many-to-Many
+- [x] Embedding vs. Referencing ($lookup for Joins)
+- [x] Transactions in MongoDB
+- [x] Schema Validation
+- [x] [MongoDB](https://www.mongodb.com/docs/manual/) Atlas (Cloud Database)
+- [x] Replication & Sharding (Basic Understanding)
+- [x] Security Best Practices
 
 ## 📝 Detailed Notes
 
@@ -75,6 +75,19 @@ db.orders.aggregate([
 ### Q2: What is the "Aggregation Pipeline"?
 It is a framework for data transformation. It consists of multiple stages (like `$match`, `$group`, `$sort`) where the output of one stage serves as the input to the next.
 
+### 6. MongoDB Change Streams
+Change streams allow applications to access real-time data changes without the complexity and risk of tailing the oplog.
+```javascript
+const collection = db.collection('orders');
+const changeStream = collection.watch();
+changeStream.on('change', next => {
+  console.log(next); // Trigger real-time notification
+});
+```
+
+### 7. Capped Collections
+Fixed-size collections that support high-throughput operations that insert and retrieve documents based on insertion order (useful for logging).
+
 ### Q3: When should you use "Embedding" over "Referencing"?
 - **Use Embedding**: When the data is frequently read together and the child data doesn't grow indefinitely (e.g., Address of a User).
 - **Use Referencing**: When the data is large, shared across documents, or updated frequently (e.g., Authors of a Book).
@@ -87,7 +100,7 @@ Starting from version 4.0, MongoDB supports multi-document ACID transactions. Th
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 

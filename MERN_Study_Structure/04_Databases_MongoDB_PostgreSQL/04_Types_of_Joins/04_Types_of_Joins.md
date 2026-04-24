@@ -1,11 +1,11 @@
 # Types of Joins:
 
 ## 📚 Curriculum Checklist
-- [ ] INNER JOIN
-- [ ] LEFT JOIN, RIGHT JOIN
-- [ ] FULL JOIN
-- [ ] Foreign Keys & Constraints
-- [ ] One-to-One, One-to-Many, Many-to-Many Relationships
+- [x] INNER JOIN
+- [x] LEFT JOIN, RIGHT JOIN
+- [x] FULL JOIN
+- [x] Foreign Keys & Constraints
+- [x] One-to-One, One-to-Many, Many-to-Many Relationships
 
 ## 📝 Detailed Notes
 
@@ -61,7 +61,7 @@ A Cross Join returns the Cartesian product of the two tables—it combines every
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 

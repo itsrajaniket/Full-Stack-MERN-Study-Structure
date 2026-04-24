@@ -1,9 +1,9 @@
 # CRUD Operations:
 
 ## 📚 Curriculum Checklist
-- [ ] SELECT, INSERT, UPDATE, DELETE
-- [ ] Filtering Data (WHERE, LIKE, IN, BETWEEN)
-- [ ] Sorting & Limiting (ORDER BY, LIMIT, OFFSET)
+- [x] SELECT, INSERT, UPDATE, DELETE
+- [x] Filtering Data (WHERE, LIKE, IN, BETWEEN)
+- [x] Sorting & Limiting (ORDER BY, LIMIT, OFFSET)
 
 ## 📝 Detailed Notes
 
@@ -29,6 +29,13 @@ UPDATE users SET email = 'newemail@example.com' WHERE id = 1;
 Used to remove rows. **Always use a WHERE clause**.
 ```sql
 DELETE FROM users WHERE id = 1;
+```
+
+### 5. UPSERT (INSERT ... ON CONFLICT)
+A combination of INSERT and UPDATE. If the row exists (based on a unique constraint), update it; otherwise, insert.
+```sql
+INSERT INTO users (id, username) VALUES (1, 'aniket')
+ON CONFLICT (id) DO UPDATE SET username = EXCLUDED.username;
 ```
 
 ### 5. Filtering Data (WHERE, LIKE, IN)
@@ -67,7 +74,7 @@ Using `LIMIT` (how many items per page) and `OFFSET` (how many items to skip).
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 
