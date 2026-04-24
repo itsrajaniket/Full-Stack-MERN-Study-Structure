@@ -7,12 +7,12 @@
 Welcome to your personal **MERN Stack Masterclass** study plan. This dashboard is your "Mission Control" for tracking every topic, from HTML basics to advanced NestJS microservices.
 
 ## 📊 Overall Progress
-| Category | Progress | Topics |
-| :--- | :--- | :--- |
-| Web Development Fundamentals | 0% | 10 |
-| Frontend Development React N | 0% | 6 |
-| Backend Development Nodejs E | 0% | 9 |
-| Databases MongoDB PostgreSQL | 0% | 7 |
+| Category | Progress | Topics | Sub Topics |
+| :--- | :--- | :--- | :--- |
+| Web Development Fundamentals | 0% | 10 | 111 |
+| Frontend Development React N | 0% | 6 | 37 |
+| Backend Development Nodejs E | 0% | 9 | 57 |
+| Databases MongoDB PostgreSQL | 0% | 7 | 51 |
 
 ## 🗺️ Visual Learning Map
 ```mermaid
