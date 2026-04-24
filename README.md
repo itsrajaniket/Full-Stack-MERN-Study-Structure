@@ -18,35 +18,40 @@ Welcome to your personal **MERN Stack Masterclass** study plan. This dashboard i
 ```mermaid
 graph LR
     subgraph "Phase 1: Fundamentals"
-        A[Fundamentals] --> HTML[HTML5]
-        HTML --> CSS[CSS3]
-        CSS --> JS[JS/TS]
+        HTML[HTML5] --> CSS[CSS3]
+        CSS --> JS[JS]
+        JS --> TS[TS]
+        TS --> Git[Git]
     end
 
     subgraph "Phase 2: Frontend"
-        JS --> React[React/Next]
-        React --> ShadCN[ShadCN]
+        Git --> React[React]
+        React --> Next[Next.js]
+        Next --> ShadCN[ShadCN]
     end
 
     subgraph "Phase 3: Backend"
-        ShadCN --> Node[Node/Express]
-        Node --> Nest[Nest.js]
+        ShadCN --> Node[Node]
+        Node --> Exp[Express]
+        Exp --> Nest[Nest.js]
     end
 
     subgraph "Phase 4: Database"
-        Nest --> DB[MongoDB/Postgre]
+        Nest --> MDB[MongoDB]
+        Nest --> PSQL[Postgre]
     end
 
     subgraph "Phase 5: Launch"
-        DB --> Project[Final Project]
-        Project --> Deploy[Deploy]
+        MDB --> Proj[Project]
+        PSQL --> Proj
+        Proj --> Dep[Deploy]
     end
 
-    style A fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style HTML fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     style React fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     style Node fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-    style DB fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-    style Project fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style MDB fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style Proj fill:#e1f5fe,stroke:#01579b,stroke-width:2px
 ```
 
 ## 🗺️ Detailed Curriculum
