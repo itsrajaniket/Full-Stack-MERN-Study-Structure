@@ -16,5 +16,8 @@
 
 
 ## ❓ Questions & Doubts
-- [ ] 
+- [ ]
 
+---
+
+[⬅️ Previous: Features](../../MERN_Study_Structure/01_Web_Development_Fundamentals/10_Features/10_Features.md) | [🏠 Home](../../README.md) | [Next: Nextjs for Full-Stack Development ➡️](../../MERN_Study_Structure/02_Frontend_Development_React_N/02_Nextjs_for_Full-Stack_Development/02_Nextjs_for_Full-Stack_Development.md)

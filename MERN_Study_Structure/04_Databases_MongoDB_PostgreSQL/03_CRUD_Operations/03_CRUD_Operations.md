@@ -10,5 +10,8 @@
 
 
 ## ❓ Questions & Doubts
-- [ ] 
+- [ ]
 
+---
+
+[⬅️ Previous: PostgreSQL](../../MERN_Study_Structure/04_Databases_MongoDB_PostgreSQL/02_PostgreSQL/02_PostgreSQL.md) | [🏠 Home](../../README.md) | [Next: Types of Joins ➡️](../../MERN_Study_Structure/04_Databases_MongoDB_PostgreSQL/04_Types_of_Joins/04_Types_of_Joins.md)

@@ -12,5 +12,8 @@
 
 
 ## ❓ Questions & Doubts
-- [ ] 
+- [ ]
 
+---
+
+[⬅️ Previous: Tech Stack HTML CSS JavaScript TypeScript Tailwind CSS](../../MERN_Study_Structure/01_Web_Development_Fundamentals/09_Tech_Stack_HTML_CSS_JavaScript_TypeScript_Tailwind_CSS/09_Tech_Stack_HTML_CSS_JavaScript_TypeScript_Tailwind_CSS.md) | [🏠 Home](../../README.md) | [Next: Reactjs ➡️](../../MERN_Study_Structure/02_Frontend_Development_React_N/01_Reactjs/01_Reactjs.md)

@@ -12,5 +12,8 @@
 
 
 ## ❓ Questions & Doubts
-- [ ] 
+- [ ]
 
+---
+
+[⬅️ Previous: Transactions Advanced Queries](../../MERN_Study_Structure/04_Databases_MongoDB_PostgreSQL/06_Transactions_Advanced_Queries/06_Transactions_Advanced_Queries.md) | [🏠 Home](../../README.md) | `🏁 End`
