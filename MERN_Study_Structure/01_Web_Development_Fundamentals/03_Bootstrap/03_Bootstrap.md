@@ -1,17 +1,17 @@
 # Bootstrap (CSS Framework)
 
 ## 📚 Curriculum Checklist
-- [ ] Core Components
-- [ ] Grid System – Containers, Rows, Cols
-- [ ] Forms – Inputs, Selects, Buttons, Checkboxes
-- [ ] Navbar & Sidebar – Navigation Components
-- [ ] Cards, Modals, Alerts
-- [ ] Theming & Customization
-- [ ] Bootstrap Variables & SASS
-- [ ] Customizing Colors & Components
-- [ ] Responsive Utilities
-- [ ] [Bootstrap Official Docs](https://getbootstrap.com/docs/)
-- [ ] [W3Schools Bootstrap](https://www.w3schools.com/bootstrap4/)
+- [x] Core Components
+- [x] Grid System – Containers, Rows, Cols
+- [x] Forms – Inputs, Selects, Buttons, Checkboxes
+- [x] Navbar & Sidebar – Navigation Components
+- [x] Cards, Modals, Alerts
+- [x] Theming & Customization
+- [x] Bootstrap Variables & SASS
+- [x] Customizing Colors & Components
+- [x] Responsive Utilities
+- [x] [Bootstrap Official Docs](https://getbootstrap.com/docs/)
+- [x] [W3Schools Bootstrap](https://www.w3schools.com/bootstrap4/)
 
 ## 📝 Detailed Notes
 
@@ -61,7 +61,7 @@ It means Bootstrap styles are applied to the smallest devices first (using `min-
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 

@@ -1,24 +1,24 @@
 # Typescript (TS)
 
 ## 📚 Curriculum Checklist
-- [ ] What is TypeScript & Why Use It?
-- [ ] Type Annotations (string, number, boolean, any, void, never)
-- [ ] Type Inference
-- [ ] Interfaces & Types
-- [ ] Enums
-- [ ] Functions with TypeScript (Return Types, Optional & Default Parameters)
-- [ ] Type Aliases vs. Interfaces
-- [ ] Union & Intersection Types
-- [ ] Generics (Array<T>, Promise<T>, Function<T>)
-- [ ] Type Assertion (as, <T>)
-- [ ] Utility Types (Partial<>, Readonly<>, Record<>)
-- [ ] Mapped & Conditional Types
-- [ ] Working with Modules (export / import)
-- [ ] TS with React & Next.js
-- [ ] TS with Node.js & Express
-- [ ] Error Handling & Debugging
-- [ ] Typescript Official Docs
-- [ ] Typescript (Video tutorial)
+- [x] What is TypeScript & Why Use It?
+- [x] Type Annotations (string, number, boolean, any, void, never)
+- [x] Type Inference
+- [x] Interfaces & Types
+- [x] Enums
+- [x] Functions with TypeScript (Return Types, Optional & Default Parameters)
+- [x] Type Aliases vs. Interfaces
+- [x] Union & Intersection Types
+- [x] Generics (Array<T>, Promise<T>, Function<T>)
+- [x] Type Assertion (as, <T>)
+- [x] Utility Types (Partial<>, Readonly<>, Record<>)
+- [x] Mapped & Conditional Types
+- [x] Working with Modules (export / import)
+- [x] TS with React & Next.js
+- [x] TS with Node.js & Express
+- [x] Error Handling & Debugging
+- [x] Typescript Official Docs
+- [x] Typescript (Video tutorial)
 
 ## 📝 Detailed Notes
 
@@ -148,7 +148,7 @@ interface Car { brand: string; model?: string; }
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 

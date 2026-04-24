@@ -1,20 +1,20 @@
 # Material UI (MUI)
 
 ## 📚 Curriculum Checklist
-- [ ] Core Components
-- [ ] Layout – Box, Grid, Stack, Container
-- [ ] Navigation – AppBar, Drawer, Tabs
-- [ ] Forms – TextField, Select, Checkbox, Radio, Autocomplete, Validations
-- [ ] Buttons – Button, IconButton, Floating Action Button
-- [ ] Feedback – Snackbar, Alert, Progress
-- [ ] Surfaces – Card, Paper, Dialog
-- [ ] Tables – Table, List, Avatar, Badge
-- [ ] Theming & Customization
-- [ ] Custom Theme – Colors, Typography, Shadows
-- [ ] Prop & Styled API – Inline styling
-- [ ] Dark Mode Switching
-- [ ] Breakpoints & Responsiveness
-- [ ] Material UI Official Docs (Comprehensive Guide)
+- [x] Core Components
+- [x] Layout – Box, Grid, Stack, Container
+- [x] Navigation – AppBar, Drawer, Tabs
+- [x] Forms – TextField, Select, Checkbox, Radio, Autocomplete, Validations
+- [x] Buttons – Button, IconButton, Floating Action Button
+- [x] Feedback – Snackbar, Alert, Progress
+- [x] Surfaces – Card, Paper, Dialog
+- [x] Tables – Table, List, Avatar, Badge
+- [x] Theming & Customization
+- [x] Custom Theme – Colors, Typography, Shadows
+- [x] Prop & Styled API – Inline styling
+- [x] Dark Mode Switching
+- [x] Breakpoints & Responsiveness
+- [x] Material UI Official Docs (Comprehensive Guide)
 
 ## 📝 Detailed Notes
 
@@ -80,7 +80,7 @@ It is a wrapper component that provides the theme configuration to all child com
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 

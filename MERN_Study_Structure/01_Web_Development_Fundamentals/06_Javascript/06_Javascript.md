@@ -1,24 +1,22 @@
 # Javascript (JS)
 
 ## 📚 Curriculum Checklist
-- [ ] Variables (var, let, const)
-- [ ] Data Types (String, Number, Boolean, Object, Array)
-- [ ] Operators & Type Coercion
-- [ ] Functions (Regular, Arrow, Callback, Higher-Order)
-- [ ] Scope & Hoisting
-- [ ] ES6+ Features (Destructuring, Spread/Rest, Template Literals)
-- [ ] Promises & Async/Await
-- [ ] Fetch API & Axios
-- [ ] DOM Manipulation & Events
-- [ ] Error Handling (Try/Catch, Throw)
-- [ ] Closures & Lexical Scope
-- [ ] Event Loop & Asynchronous JS
-- [ ] Modules (import / export)
-- [ ] Object-Oriented Programming (OOP) – Prototypes, Classes
-- [ ] Functional Programming – Map, Reduce, Filter
-- [ ] Web Storage (LocalStorage, SessionStorage, Cookies)
-- [ ] Javascript Docs
-- [ ] Javascript (Video Tutorial)
+- [x] Variables (var, let, const)
+- [x] Data Types (String, Number, Boolean, Object, Array)
+- [x] Operators & Type Coercion
+- [x] Functions (Regular, Arrow, Callback, Higher-Order)
+- [x] Scope & Hoisting
+- [x] ES6+ Features (Destructuring, Spread/Rest, Template Literals)
+- [x] Promises & Async/Await
+- [x] Fetch API & Axios
+- [x] DOM Manipulation & Events
+- [x] Error Handling (Try/Catch, Throw)
+- [x] Closures & Lexical Scope
+- [x] Event Loop & Asynchronous JS
+- [x] Modules (import / export)
+- [x] Object-Oriented Programming (OOP) – Prototypes, Classes
+- [x] Functional Programming – Map, Reduce, Filter
+- [x] Web Storage (LocalStorage, SessionStorage, Cookies)
 
 ## 📝 Detailed Notes
 
@@ -136,6 +134,16 @@ const user = JSON.parse(localStorage.getItem('user'));
 localStorage.removeItem('user');
 ```
 
+### 14. Garbage Collection & Memory Management
+JavaScript automatically manages memory using **Garbage Collection**. 
+- **Mark-and-Sweep Algorithm**: The engine "marks" objects that are reachable and "sweeps" the rest.
+- **Memory Leaks**: Avoid global variables, forgotten timers (`setInterval`), and removed DOM elements that still have active event listeners.
+
+### 15. Prototypal Inheritance (The Core)
+Every object in JS has a hidden `[[Prototype]]` property that links to another object.
+- **Prototype Chain**: If a property isn't found on an object, JS looks up the chain.
+- `Array.prototype`, `Object.prototype` are the roots of most objects.
+
 ---
 
 ## 🎓 Important Interview Questions
@@ -165,8 +173,9 @@ The value of `this` is determined by how a function is called (the call site). I
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 
 [⬅️ Previous: Material UI](../../MERN_Study_Structure/01_Web_Development_Fundamentals/05_Material_UI/05_Material_UI.md) | [🏠 Home](../../README.md) | [Next: Typescript ➡️](../../MERN_Study_Structure/01_Web_Development_Fundamentals/07_Typescript/07_Typescript.md)
+/07_Typescript/07_Typescript.md)

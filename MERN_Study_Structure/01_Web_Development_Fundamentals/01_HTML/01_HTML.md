@@ -1,13 +1,14 @@
 # HTML (Structure & Semantics)
 
 ## 📚 Curriculum Checklist
-- [ ] HTML Boilerplate
-- [ ] Headings, Paragraphs, Lists, Tables
-- [ ] Forms (Inputs, Buttons, Textareas, Checkboxes, Radio Buttons)
-- [ ] Semantic HTML (header, nav, article, section, aside, footer)
-- [ ] Meta Tags & SEO Basics
-- [ ] [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)  (Official Documentation)
-- [ ] [W3Schools - HTML](https://www.w3schools.com/html/)
+- [x] HTML Boilerplate
+- [x] Headings, Paragraphs, Lists, Tables
+- [x] Forms (Inputs, Buttons, Textareas, Checkboxes, Radio Buttons)
+- [x] Semantic HTML (header, nav, article, section, aside, footer)
+- [x] Meta Tags & SEO Basics
+- [x] HTML5 Form Validation
+- [x] [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)  (Official Documentation)
+- [x] [W3Schools - HTML](https://www.w3schools.com/html/)
 
 ## 📝 Detailed Notes
 
@@ -68,7 +69,14 @@ Forms are the core of interactive web apps.
 - **Buttons**: `<button type="submit|button|reset">`.
 - **Labels**: Always use `<label for="id">` for accessibility.
 
-### 6. Meta Tags & SEO Basics
+### 6. HTML5 Form Validation
+HTML5 provides built-in validation without JavaScript:
+- `required`: Field must be filled.
+- `pattern`: Regex validation (e.g., `pattern="[0-9]{10}"`).
+- `min`, `max`, `step`: For number/date inputs.
+- `minlength`, `maxlength`: For text inputs.
+
+### 7. Meta Tags & SEO Basics
 Meta tags provide metadata about the HTML document.
 - **Description**: `<meta name="description" content="Detailed page description">`.
 - **OG Tags**: Used for social media previews (Open Graph).
@@ -106,8 +114,9 @@ It is an instruction to the web browser about what version of HTML the page is w
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 
 `⬅️ Start` | [🏠 Home](../../README.md) | [Next: CSS ➡️](../../MERN_Study_Structure/01_Web_Development_Fundamentals/02_CSS/02_CSS.md)
+tals/02_CSS/02_CSS.md)

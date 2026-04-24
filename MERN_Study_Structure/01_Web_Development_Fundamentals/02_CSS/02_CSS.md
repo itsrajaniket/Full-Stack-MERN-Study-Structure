@@ -1,14 +1,12 @@
 # CSS (Styling & Layouts)
 
 ## 📚 Curriculum Checklist
-- [ ] Selectors & Specificity
-- [ ] Box Model (Margin, Padding, Border)
-- [ ] Display (Block, Inline, Inline-block, Flex, Grid)
-- [ ] Positioning (Relative, Absolute, Fixed, Sticky)
-- [ ] Media Queries (Responsive Design)
-- [ ] Transitions & Animations
-- [ ] [MDN Web Docs - CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) (Official Documentation)
-- [ ] [W3Schools - CSS](https://www.w3schools.com/css/)
+- [x] Selectors & Specificity
+- [x] Box Model (Margin, Padding, Border)
+- [x] Display (Block, Inline, Inline-block, Flex, Grid)
+- [x] Positioning (Relative, Absolute, Fixed, Sticky)
+- [x] Media Queries (Responsive Design)
+- [x] Transitions & Animations
 
 ## 📝 Detailed Notes
 
@@ -56,7 +54,15 @@ Every element is considered a box.
 - `gap`: Space between grid items.
 - `grid-area`: Naming and placing items.
 
-### 7. Responsive Design & Media Queries
+### 7. Flexbox vs. Grid: When to use what?
+| Feature | Flexbox (1D) | CSS Grid (2D) |
+| :--- | :--- | :--- |
+| **Axis** | Either Row OR Column. | Row AND Column simultaneously. |
+| **Alignment** | Content-first (item size determines layout). | Layout-first (grid cells determine item size). |
+| **Complexity** | Best for small components (Navbars, Buttons). | Best for page layouts and complex dashboards. |
+| **Gaps** | `gap` (recent support), otherwise margins. | Native `gap` support since inception. |
+
+### 8. Responsive Design & Media Queries
 ```css
 /* Tablet and Mobile styles */
 @media (max-width: 768px) {
@@ -65,7 +71,7 @@ Every element is considered a box.
 ```
 - **Mobile First**: Writing styles for small screens first, then adding media queries for larger screens.
 
-### 8. Transitions & Animations
+### 9. Transitions & Animations
 - **Transitions**: Smoothly changing a property (e.g., `transition: background 0.3s ease;`).
 - **Keyframe Animations**:
 ```css
@@ -118,7 +124,55 @@ They allow you to store values (like colors or spacing) in one place and reuse t
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
+
+---
+
+[⬅️ Previous: HTML](../../MERN_Study_Structure/01_Web_Development_Fundamentals/01_HTML/01_HTML.md) | [🏠 Home](../../README.md) | [Next: Bootstrap ➡️](../../MERN_Study_Structure/01_Web_Development_Fundamentals/03_Bootstrap/03_Bootstrap.md)
+
+---
+
+## 🎓 Important Interview Questions
+
+### Q1: What is the difference between `reset.css` and `normalize.css`?
+- **Reset**: Removes all default browser styling (starts from a blank slate).
+- **Normalize**: Preserves useful defaults and fixes common browser inconsistencies.
+
+### Q2: Explain the `z-index` and Stacking Context.
+`z-index` controls the vertical stacking order of elements. It only works on positioned elements (`relative`, `absolute`, `fixed`, `sticky`). A new stacking context is created by opacity < 1, transforms, or `z-index` values.
+
+### Q3: How do you center a `div` both horizontally and vertically?
+- **Flexbox**:
+  ```css
+  .parent { display: flex; justify-content: center; align-items: center; height: 100vh; }
+  ```
+- **Grid**:
+  ```css
+  .parent { display: grid; place-items: center; height: 100vh; }
+  ```
+- **Absolute Position**:
+  ```css
+  .child { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  ```
+
+### Q4: What are CSS Variables (Custom Properties)?
+They allow you to store values (like colors or spacing) in one place and reuse them throughout the stylesheet using the `var()` function.
+```css
+:root { --primary-color: #3498db; }
+.btn { background-color: var(--primary-color); }
+```
+
+### Q5: What is the difference between `em` and `rem` units?
+- **em**: Relative to the font-size of its **parent**.
+- **rem**: Relative to the font-size of the **root** (`<html>`) element. (Recommended for accessibility).
+
+### Q6: Explain "Pseudo-classes" vs "Pseudo-elements".
+- **Pseudo-class**: Targets a specific *state* of an element (e.g., `:hover`, `:nth-child(2)`, `:focus`).
+- **Pseudo-element**: Targets a specific *part* of an element (e.g., `::before`, `::after`, `::first-letter`).
+
+
+## ❓ Questions & Doubts
+- [x]
 
 ---
 

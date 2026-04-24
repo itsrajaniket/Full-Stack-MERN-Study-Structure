@@ -65,7 +65,7 @@ It temporarily shelves (or stashes) changes you've made to your working copy so 
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 

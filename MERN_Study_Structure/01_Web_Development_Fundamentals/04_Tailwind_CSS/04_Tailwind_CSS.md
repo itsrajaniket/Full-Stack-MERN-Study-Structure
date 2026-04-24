@@ -1,19 +1,19 @@
 # Tailwind CSS (CSS Framework)
 
 ## 📚 Curriculum Checklist
-- [ ] Basics & Utility Classes
-- [ ] Layout – Flexbox, Grid, Container
-- [ ] Spacing – Padding, Margin, Gap
-- [ ] Typography – Fonts, Colors, Text Sizing
-- [ ] Backgrounds – Colors, Gradients, Shadows
-- [ ] Borders & Effects – Rounded Corners, Opacity, Filters
-- [ ] Advanced Customization
-- [ ] Custom Colors & Themes (tailwind.config.js)
-- [ ] Responsive Design – sm, md, lg, xl, 2xl
-- [ ] Dark Mode Support
-- [ ] Animation & Transitions
-- [ ] [Tailwind CSS](https://tailwindcss.com/docs) Official Docs (Best reference)
-- [ ] [Tailwind CSS](https://tailwindcss.com/docs) (Video Tutorial)
+- [x] Basics & Utility Classes
+- [x] Layout – Flexbox, Grid, Container
+- [x] Spacing – Padding, Margin, Gap
+- [x] Typography – Fonts, Colors, Text Sizing
+- [x] Backgrounds – Colors, Gradients, Shadows
+- [x] Borders & Effects – Rounded Corners, Opacity, Filters
+- [x] Advanced Customization
+- [x] Custom Colors & Themes (tailwind.config.js)
+- [x] Responsive Design – sm, md, lg, xl, 2xl
+- [x] Dark Mode Support
+- [x] Animation & Transitions
+- [x] [Tailwind CSS](https://tailwindcss.com/docs) Official Docs (Best reference)
+- [x] [Tailwind CSS](https://tailwindcss.com/docs) (Video Tutorial)
 
 ## 📝 Detailed Notes
 
@@ -101,7 +101,7 @@ PurgeCSS scans your HTML/JS files and removes all unused Tailwind classes from t
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 

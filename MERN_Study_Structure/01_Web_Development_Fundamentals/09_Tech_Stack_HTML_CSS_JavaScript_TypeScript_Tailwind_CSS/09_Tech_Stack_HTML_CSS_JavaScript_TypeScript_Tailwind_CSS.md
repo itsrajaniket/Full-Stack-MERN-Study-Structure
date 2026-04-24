@@ -1,10 +1,10 @@
 # Tech Stack: HTML, CSS, JavaScript, TypeScript, Tailwind CSS
 
 ## 📚 Curriculum Checklist
-- [ ] Blog Listing – Grid layout with images and short descriptions
-- [ ] Blog Details Page – Full blog content with an author profile
-- [ ] Dark Mode Toggle – Use Tailwind's dark mode feature
-- [ ] Responsive Design – Mobile-friendly
+- [x] Blog Listing – Grid layout with images and short descriptions
+- [x] Blog Details Page – Full blog content with an author profile
+- [x] Dark Mode Toggle – Use Tailwind's dark mode feature
+- [x] Responsive Design – Mobile-friendly
 
 ## 📝 Detailed Notes
 
@@ -42,7 +42,7 @@ For this project, `useState` was sufficient. However, if the state became more c
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 

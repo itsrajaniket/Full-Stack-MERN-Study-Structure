@@ -1,11 +1,11 @@
 # Features:
 
 ## 📚 Curriculum Checklist
-- [ ] Dashboard UI – List of tasks with Material UI Cards
-- [ ] Add/Edit/Delete Tasks – Use Material UI Dialog & Forms
-- [ ] Task Status – Checkbox for marking tasks as completed
-- [ ] Filter Tasks – Dropdown to filter by status
-- [ ] Dark Mode Support – Material UI ThemeProvider
+- [x] Dashboard UI – List of tasks with Material UI Cards
+- [x] Add/Edit/Delete Tasks – Use Material UI Dialog & Forms
+- [x] Task Status – Checkbox for marking tasks as completed
+- [x] Filter Tasks – Dropdown to filter by status
+- [x] Dark Mode Support – Material UI ThemeProvider
 
 ## 📝 Detailed Notes
 
@@ -63,7 +63,7 @@ const [mode, setMode] = useState(() => localStorage.getItem('theme') || 'light')
 
 
 ## ❓ Questions & Doubts
-- [ ]
+- [x]
 
 ---
 
