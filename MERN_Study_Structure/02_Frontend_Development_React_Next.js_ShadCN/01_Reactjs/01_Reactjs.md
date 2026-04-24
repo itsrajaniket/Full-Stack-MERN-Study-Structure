@@ -1,13 +1,13 @@
 # React.js (Vite/CRA)
 
 ## 📚 Curriculum Checklist
-- [ ] React Basics – JSX, Components, Props, State
-- [ ] Event Handling & Forms
-- [ ] Hooks – useState, useEffect, useRef, useContext, useReducer
-- [ ] React Router – Navigation & Route Parameters
-- [ ] State Management – Context API, Redux Toolkit (optional)
-- [ ] API Handling – Fetch, Axios, React Query
-- [ ] Performance Optimization – Memoization, Lazy Loading
+- [x] React Basics – JSX, Components, Props, State
+- [x] Event Handling & Forms
+- [x] Hooks – useState, useEffect, useRef, useContext, useReducer
+- [x] React Router – Navigation & Route Parameters
+- [x] State Management – Context API, Redux Toolkit (optional)
+- [x] API Handling – Fetch, Axios, React Query
+- [x] Performance Optimization – Memoization, Lazy Loading
 - [ ] [React Docs](https://react.dev/reference/react)
 - [ ] [React Tutorial](https://react.dev/learn) (Video)
 
@@ -151,6 +151,28 @@ const dispatch = useDispatch();
 dispatch(increment());
 ```
 
+#### Zustand (Modern Alternative)
+Zustand is a small, fast, and scalable bearbones state-management solution. It has less boilerplate than Redux.
+```tsx
+import { create } from 'zustand';
+
+const useStore = create((set) => ({
+  count: 0,
+  inc: () => set((state) => ({ count: state.count + 1 })),
+}));
+
+function Counter() {
+  const { count, inc } = useStore();
+  return <button onClick={inc}>{count}</button>;
+}
+```
+
+#### Which one to choose?
+- **Context API**: For low-frequency updates (e.g., Theme, Auth).
+- **Zustand**: For simple to medium global state with minimal boilerplate.
+- **Redux Toolkit**: For complex, high-frequency updates or large teams with established patterns.
+- **React Query**: For **Server State** (caching, loading, syncing).
+
 ### 6. API Handling — Fetch, Axios, React Query
 ```tsx
 // React Query (TanStack) — Best Practice
@@ -176,6 +198,76 @@ const HeavyChart = React.lazy(() => import('./HeavyChart'));
 ```
 - **Code Splitting**: React automatically splits at lazy() boundaries.
 - **Avoid unnecessary state**: Derived data should not be in state.
+
+### 8. Custom Hooks
+Custom hooks allow you to extract component logic into reusable functions.
+```tsx
+function useLocalStorage<T>(key: string, initialValue: T) {
+    const [storedValue, setStoredValue] = useState<T>(() => {
+        const item = window.localStorage.getItem(key);
+        return item ? JSON.parse(item) : initialValue;
+    });
+
+    const setValue = (value: T) => {
+        setStoredValue(value);
+        window.localStorage.setItem(key, JSON.stringify(value));
+    };
+
+    return [storedValue, setValue] as const;
+}
+```
+
+### 9. Portals & Error Boundaries
+- **Portals**: Render children into a DOM node that exists outside the hierarchy of the parent component (useful for modals).
+- **Error Boundaries**: Catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI.
+
+### 10. Testing with React Testing Library (RTL)
+```tsx
+import { render, screen, fireEvent } from '@testing-library/react';
+import Counter from './Counter';
+
+test('increments counter', () => {
+  render(<Counter />);
+  const button = screen.getByText('Increment');
+  fireEvent.click(button);
+  expect(screen.getByText('Count: 1')).toBeInTheDocument();
+});
+```
+
+### 11. Advanced React Patterns
+- **Compound Components**: Components that work together to form a unit (e.g., `<Tabs><Tabs.List>...</Tabs.List></Tabs>`).
+- **Higher-Order Components (HOC)**: A function that takes a component and returns a new component (useful for cross-cutting concerns like Auth).
+- **Render Props**: A technique for sharing code between components using a prop whose value is a function.
+
+### 12. Professional Form Management (React Hook Form + Zod)
+Managing forms manually with `useState` is tedious. The professional way:
+```tsx
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import * as z from 'zod';
+
+const schema = z.object({
+  username: z.string().min(3, "Too short"),
+  email: z.string().email("Invalid email"),
+});
+
+const { register, handleSubmit, formState: { errors } } = useForm({
+  resolver: zodResolver(schema)
+});
+
+const onSubmit = (data) => console.log(data);
+
+<form onSubmit={handleSubmit(onSubmit)}>
+  <input {...register('username')} />
+  {errors.username && <span>{errors.username.message}</span>}
+  <button type="submit">Submit</button>
+</form>
+```
+
+### 13. Frontend Security Basics
+- **XSS Prevention**: React automatically escapes strings, but avoid `dangerouslySetInnerHTML` unless necessary.
+- **CSRF Protection**: Use SameSite cookie attributes and CSRF tokens for sensitive mutations.
+- **Sensitive Data**: Never store JWTs or API keys in `localStorage` if they are highly sensitive; use `HttpOnly` cookies.
 
 ---
 
