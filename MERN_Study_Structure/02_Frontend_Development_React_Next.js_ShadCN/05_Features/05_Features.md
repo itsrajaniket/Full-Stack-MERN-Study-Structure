@@ -1,4 +1,6 @@
-# Features:
+﻿# Features:
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Task List with CRUD (Create, Update, Delete)
@@ -101,3 +103,8 @@ It generates a globally unique ID without any library, avoiding key conflicts in
 ---
 
 [⬅️ Previous: Integrating Tailwind Material UI and ShadCN in React Nextjs](../../MERN_Study_Structure/02_Frontend_Development_React_N/04_Integrating_Tailwind_Material_UI_and_ShadCN_in_React_Nextjs/04_Integrating_Tailwind_Material_UI_and_ShadCN_in_React_Nextjs.md) | [🏠 Home](../../README.md) | [Next: Features ➡️](../../MERN_Study_Structure/02_Frontend_Development_React_N/06_Features/06_Features.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

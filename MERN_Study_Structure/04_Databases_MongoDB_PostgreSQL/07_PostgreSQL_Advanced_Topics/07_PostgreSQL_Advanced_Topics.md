@@ -1,4 +1,6 @@
-# PostgreSQL Advanced Topics
+﻿# PostgreSQL Advanced Topics
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Stored Procedures & Functions
@@ -77,3 +79,8 @@ Postgres uses **MVCC (Multi-Version Concurrency Control)**. Instead of locking t
 ---
 
 [⬅️ Previous: Transactions Advanced Queries](../../MERN_Study_Structure/04_Databases_MongoDB_PostgreSQL/06_Transactions_Advanced_Queries/06_Transactions_Advanced_Queries.md) | [🏠 Home](../../README.md) | `🏁 End`
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

@@ -1,4 +1,6 @@
-# Tech Stack: HTML, CSS, JavaScript, TypeScript, Tailwind CSS
+﻿# Tech Stack: HTML, CSS, JavaScript, TypeScript, Tailwind CSS
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Blog Listing – Grid layout with images and short descriptions
@@ -47,3 +49,8 @@ For this project, `useState` was sufficient. However, if the state became more c
 ---
 
 [⬅️ Previous: Git GitHub](../../MERN_Study_Structure/01_Web_Development_Fundamentals/08_Git_GitHub/08_Git_GitHub.md) | [🏠 Home](../../README.md) | [Next: Features ➡️](../../MERN_Study_Structure/01_Web_Development_Fundamentals/10_Features/10_Features.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

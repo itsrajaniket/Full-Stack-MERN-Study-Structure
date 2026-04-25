@@ -1,4 +1,6 @@
-# React.js (Vite/CRA)
+﻿# React.js (Vite/CRA)
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] React Basics – JSX, Components, Props, State
@@ -304,3 +306,8 @@ React's "diffing" algorithm that compares the new Virtual DOM tree to the old on
 ---
 
 [⬅️ Previous: Features](../../MERN_Study_Structure/01_Web_Development_Fundamentals/10_Features/10_Features.md) | [🏠 Home](../../README.md) | [Next: Nextjs for Full-Stack Development ➡️](../../MERN_Study_Structure/02_Frontend_Development_React_N/02_Nextjs_for_Full-Stack_Development/02_Nextjs_for_Full-Stack_Development.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

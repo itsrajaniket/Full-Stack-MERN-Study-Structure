@@ -1,4 +1,6 @@
-# Express.js
+﻿# Express.js
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Setting Up an Express Server
@@ -120,3 +122,8 @@ app.use(cors());
 ---
 
 [⬅️ Previous: Nodejs](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/01_Nodejs/01_Nodejs.md) | [🏠 Home](../../README.md) | [Next: Authentication Authorization ➡️](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/03_Authentication_Authorization/03_Authentication_Authorization.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

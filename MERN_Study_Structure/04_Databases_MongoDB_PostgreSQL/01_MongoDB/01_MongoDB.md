@@ -1,4 +1,6 @@
-# MongoDB (NoSQL Database)
+﻿# MongoDB (NoSQL Database)
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Introduction to NoSQL & MongoDB
@@ -105,3 +107,8 @@ Starting from version 4.0, MongoDB supports multi-document ACID transactions. Th
 ---
 
 [⬅️ Previous: Advanced Topics](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/09_Advanced_Topics/09_Advanced_Topics.md) | [🏠 Home](../../README.md) | [Next: PostgreSQL ➡️](../../MERN_Study_Structure/04_Databases_MongoDB_PostgreSQL/02_PostgreSQL/02_PostgreSQL.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

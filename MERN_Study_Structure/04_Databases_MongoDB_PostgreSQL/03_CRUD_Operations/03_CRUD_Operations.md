@@ -1,4 +1,6 @@
-# CRUD Operations:
+﻿# CRUD Operations:
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] SELECT, INSERT, UPDATE, DELETE
@@ -79,3 +81,8 @@ Using `LIMIT` (how many items per page) and `OFFSET` (how many items to skip).
 ---
 
 [⬅️ Previous: PostgreSQL](../../MERN_Study_Structure/04_Databases_MongoDB_PostgreSQL/02_PostgreSQL/02_PostgreSQL.md) | [🏠 Home](../../README.md) | [Next: Types of Joins ➡️](../../MERN_Study_Structure/04_Databases_MongoDB_PostgreSQL/04_Types_of_Joins/04_Types_of_Joins.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

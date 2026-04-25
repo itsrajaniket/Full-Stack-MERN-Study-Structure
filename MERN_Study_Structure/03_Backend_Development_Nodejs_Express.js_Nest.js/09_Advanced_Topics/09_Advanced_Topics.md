@@ -1,4 +1,6 @@
-# Advanced Topics
+﻿# Advanced Topics
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] WebSockets with NestJS (Gateway)
@@ -93,3 +95,8 @@ Cron Jobs are scheduled tasks that run at specific intervals. A common use case 
 ---
 
 [⬅️ Previous: Authentication Security](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/08_Authentication_Security/08_Authentication_Security.md) | [🏠 Home](../../README.md) | [Next: MongoDB ➡️](../../MERN_Study_Structure/04_Databases_MongoDB_PostgreSQL/01_MongoDB/01_MongoDB.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

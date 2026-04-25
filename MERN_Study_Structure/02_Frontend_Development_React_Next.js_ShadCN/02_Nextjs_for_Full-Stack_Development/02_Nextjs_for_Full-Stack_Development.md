@@ -1,4 +1,6 @@
-# Next.js for Full-Stack Development
+﻿# Next.js for Full-Stack Development
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Pages & Routing – App Router (new), File-based routing
@@ -205,3 +207,8 @@ export const metadata = { title: 'My Page', description: '...' };
 ---
 
 [⬅️ Previous: Reactjs](../../MERN_Study_Structure/02_Frontend_Development_React_N/01_Reactjs/01_Reactjs.md) | [🏠 Home](../../README.md) | [Next: ShadCN ➡️](../../MERN_Study_Structure/02_Frontend_Development_React_N/03_ShadCN/03_ShadCN.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

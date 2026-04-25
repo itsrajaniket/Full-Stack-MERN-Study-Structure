@@ -1,4 +1,6 @@
-# Tailwind CSS (CSS Framework)
+﻿# Tailwind CSS (CSS Framework)
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Basics & Utility Classes
@@ -106,3 +108,8 @@ PurgeCSS scans your HTML/JS files and removes all unused Tailwind classes from t
 ---
 
 [⬅️ Previous: Bootstrap](../../MERN_Study_Structure/01_Web_Development_Fundamentals/03_Bootstrap/03_Bootstrap.md) | [🏠 Home](../../README.md) | [Next: Material UI ➡️](../../MERN_Study_Structure/01_Web_Development_Fundamentals/05_Material_UI/05_Material_UI.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

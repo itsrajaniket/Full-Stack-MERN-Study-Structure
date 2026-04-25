@@ -1,4 +1,6 @@
-# Javascript (JS)
+﻿# Javascript (JS)
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Variables (var, let, const)
@@ -1013,4 +1015,8 @@ The value of `this` is determined by how a function is called (the call site). I
 That's the complete **JavaScript** section — **50 questions** with full subtopic depth, ready to merge into your MERN Interview Kit.
 
 [⬅️ Previous: Material UI](../../MERN_Study_Structure/01_Web_Development_Fundamentals/05_Material_UI/05_Material_UI.md) | [🏠 Home](../../README.md) | [Next: Typescript ➡️](../../MERN_Study_Structure/01_Web_Development_Fundamentals/07_Typescript/07_Typescript.md)
-/07_Typescript/07_Typescript.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

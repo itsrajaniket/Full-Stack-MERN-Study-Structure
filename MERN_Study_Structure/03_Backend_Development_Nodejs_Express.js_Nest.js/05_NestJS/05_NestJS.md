@@ -1,4 +1,6 @@
-# NestJS (Enterprise Backend Development)
+﻿# NestJS (Enterprise Backend Development)
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] NestJS Fundamentals
@@ -73,3 +75,8 @@ DTOs define the contract for the data being sent in a request. They ensure that 
 ---
 
 [⬅️ Previous: Advanced Expressjs](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/04_Advanced_Expressjs/04_Advanced_Expressjs.md) | [🏠 Home](../../README.md) | [Next: Building REST APIs ➡️](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/06_Building_REST_APIs/06_Building_REST_APIs.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

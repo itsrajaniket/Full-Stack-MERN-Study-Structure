@@ -1,4 +1,6 @@
-# Features:
+﻿# Features:
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Dashboard UI – List of tasks with Material UI Cards
@@ -68,3 +70,8 @@ const [mode, setMode] = useState(() => localStorage.getItem('theme') || 'light')
 ---
 
 [⬅️ Previous: Tech Stack HTML CSS JavaScript TypeScript Tailwind CSS](../../MERN_Study_Structure/01_Web_Development_Fundamentals/09_Tech_Stack_HTML_CSS_JavaScript_TypeScript_Tailwind_CSS/09_Tech_Stack_HTML_CSS_JavaScript_TypeScript_Tailwind_CSS.md) | [🏠 Home](../../README.md) | [Next: Reactjs ➡️](../../MERN_Study_Structure/02_Frontend_Development_React_N/01_Reactjs/01_Reactjs.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

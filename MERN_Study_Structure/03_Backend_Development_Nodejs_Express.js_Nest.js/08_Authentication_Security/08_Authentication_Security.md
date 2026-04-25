@@ -1,4 +1,6 @@
-# Authentication & Security
+﻿# Authentication & Security
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] [JWT Authentication](https://jwt.io/introduction/) with Passport.js
@@ -83,3 +85,8 @@ Helmet is a collection of 14 smaller middleware functions that set HTTP response
 ---
 
 [⬅️ Previous: Database ORM](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/07_Database_ORM/07_Database_ORM.md) | [🏠 Home](../../README.md) | [Next: Advanced Topics ➡️](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/09_Advanced_Topics/09_Advanced_Topics.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

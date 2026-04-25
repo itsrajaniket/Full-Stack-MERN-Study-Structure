@@ -1,4 +1,6 @@
-# Features:
+﻿# Features:
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Task List with CRUD (Create, Update, Delete)
@@ -66,3 +68,8 @@ When the user clicks "Edit", set the selected item into state. Pass it to your f
 ---
 
 [⬅️ Previous: Features](../../MERN_Study_Structure/02_Frontend_Development_React_N/05_Features/05_Features.md) | [🏠 Home](../../README.md) | [Next: Nodejs ➡️](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/01_Nodejs/01_Nodejs.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

@@ -1,4 +1,6 @@
-# Database & ORM
+﻿# Database & ORM
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] TypeORM & Prisma with NestJS
@@ -77,3 +79,8 @@ It happens when an ORM executes one query to fetch a list of items, and then exe
 ---
 
 [⬅️ Previous: Building REST APIs](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/06_Building_REST_APIs/06_Building_REST_APIs.md) | [🏠 Home](../../README.md) | [Next: Authentication Security ➡️](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/08_Authentication_Security/08_Authentication_Security.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

@@ -1,4 +1,6 @@
-# Frontend Development Overview (React, Next.js, ShadCN)
+﻿# Frontend Development Overview (React, Next.js, ShadCN)
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Core Topics Covered
 
@@ -63,3 +65,8 @@
 
 ## ❓ Questions & Doubts
 - [ ] Add any further topics you feel need deeper coverage.
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

@@ -1,4 +1,6 @@
-# Typescript (TS)
+﻿# Typescript (TS)
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] What is TypeScript & Why Use It?
@@ -153,3 +155,8 @@ interface Car { brand: string; model?: string; }
 ---
 
 [⬅️ Previous: Javascript](../../MERN_Study_Structure/01_Web_Development_Fundamentals/06_Javascript/06_Javascript.md) | [🏠 Home](../../README.md) | [Next: Git GitHub ➡️](../../MERN_Study_Structure/01_Web_Development_Fundamentals/08_Git_GitHub/08_Git_GitHub.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

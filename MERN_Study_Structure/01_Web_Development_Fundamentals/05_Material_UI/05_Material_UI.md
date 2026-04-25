@@ -1,4 +1,6 @@
-# Material UI (MUI)
+﻿# Material UI (MUI)
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Core Components
@@ -85,3 +87,8 @@ It is a wrapper component that provides the theme configuration to all child com
 ---
 
 [⬅️ Previous: Tailwind CSS](../../MERN_Study_Structure/01_Web_Development_Fundamentals/04_Tailwind_CSS/04_Tailwind_CSS.md) | [🏠 Home](../../README.md) | [Next: Javascript ➡️](../../MERN_Study_Structure/01_Web_Development_Fundamentals/06_Javascript/06_Javascript.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

@@ -1,4 +1,6 @@
-# Integrating Tailwind, Material UI, and ShadCN in React & Next.js
+﻿# Integrating Tailwind, Material UI, and ShadCN in React & Next.js
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Theming in Material UI & ShadCN
@@ -136,3 +138,8 @@ Tailwind uses a **mobile-first** approach.
 ---
 
 [⬅️ Previous: ShadCN](../../MERN_Study_Structure/02_Frontend_Development_React_N/03_ShadCN/03_ShadCN.md) | [🏠 Home](../../README.md) | [Next: Features ➡️](../../MERN_Study_Structure/02_Frontend_Development_React_N/05_Features/05_Features.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

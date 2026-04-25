@@ -1,4 +1,6 @@
-# Authentication & Authorization
+﻿# Authentication & Authorization
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] [JWT Authentication](https://jwt.io/introduction/) (jsonwebtoken)
@@ -82,3 +84,8 @@ A refresh token is a long-lived token used to get new access tokens when they ex
 ---
 
 [⬅️ Previous: Expressjs](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/02_Expressjs/02_Expressjs.md) | [🏠 Home](../../README.md) | [Next: Advanced Expressjs ➡️](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/04_Advanced_Expressjs/04_Advanced_Expressjs.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

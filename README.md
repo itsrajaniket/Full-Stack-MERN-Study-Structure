@@ -1,4 +1,4 @@
-# 🚀 Full-Stack MERN Study Dashboard
+﻿# 🚀 Full-Stack MERN Study Dashboard
 
 ![MERN Stack](https://img.shields.io/badge/MERN-Stack-blue?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Learning-success?style=for-the-badge)
@@ -99,3 +99,11 @@ graph LR
 
 
 ---
+
+---
+<div align='center'>
+  <h3>🚀 Developed by <b>Aniket Raj</b></h3>
+  <p>Full-Stack MERN Developer | Open to Collaborations</p>
+  <a href='https://github.com/itsrajaniket'><img src='https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white' /></a>
+  <a href='https://www.linkedin.com/in/itsrajaniket/'><img src='https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white' /></a>
+</div>

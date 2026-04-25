@@ -1,4 +1,6 @@
-# Building REST APIs
+﻿# Building REST APIs
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Routing & Controllers
@@ -84,3 +86,8 @@ Controllers don't create their own services. Instead, they "ask" for them in the
 ---
 
 [⬅️ Previous: NestJS](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/05_NestJS/05_NestJS.md) | [🏠 Home](../../README.md) | [Next: Database ORM ➡️](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/07_Database_ORM/07_Database_ORM.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

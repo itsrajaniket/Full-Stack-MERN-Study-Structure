@@ -1,4 +1,6 @@
-# Advanced Express.js
+﻿# Advanced Express.js
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] File Uploading (Multer, Cloudinary, AWS S3)
@@ -110,3 +112,8 @@ Using **Swagger (OpenAPI)**. It allows other developers to see all your endpoint
 ---
 
 [⬅️ Previous: Authentication Authorization](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/03_Authentication_Authorization/03_Authentication_Authorization.md) | [🏠 Home](../../README.md) | [Next: NestJS ➡️](../../MERN_Study_Structure/03_Backend_Development_Nodejs_E/05_NestJS/05_NestJS.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

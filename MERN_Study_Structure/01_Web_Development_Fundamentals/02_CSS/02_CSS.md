@@ -1,4 +1,6 @@
-# CSS (Styling & Layouts)
+﻿# CSS (Styling & Layouts)
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] Selectors & Specificity
@@ -648,3 +650,8 @@ They allow you to store values (like colors or spacing) in one place and reuse t
 That's the complete **CSS (Styling & Layouts)** section — **30 questions** with full subtopic depth, ready to merge into your MERN Interview Kit.
 
 [⬅️ Previous: HTML](../../MERN_Study_Structure/01_Web_Development_Fundamentals/01_HTML/01_HTML.md) | [🏠 Home](../../README.md) | [Next: Bootstrap ➡️](../../MERN_Study_Structure/01_Web_Development_Fundamentals/03_Bootstrap/03_Bootstrap.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

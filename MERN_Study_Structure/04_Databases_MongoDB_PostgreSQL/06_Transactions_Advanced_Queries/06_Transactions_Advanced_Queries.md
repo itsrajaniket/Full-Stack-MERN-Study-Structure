@@ -1,4 +1,6 @@
-# Transactions & Advanced Queries
+﻿# Transactions & Advanced Queries
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] ACID Properties
@@ -73,3 +75,8 @@ The `OVER()` clause defines the "window" or set of rows the function should oper
 ---
 
 [⬅️ Previous: Indexes Performance Optimization](../../MERN_Study_Structure/04_Databases_MongoDB_PostgreSQL/05_Indexes_Performance_Optimization/05_Indexes_Performance_Optimization.md) | [🏠 Home](../../README.md) | [Next: PostgreSQL Advanced Topics ➡️](../../MERN_Study_Structure/04_Databases_MongoDB_PostgreSQL/07_PostgreSQL_Advanced_Topics/07_PostgreSQL_Advanced_Topics.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>

@@ -1,4 +1,6 @@
-# HTML (Structure & Semantics)
+﻿# HTML (Structure & Semantics)
+> ✍️ **Author:** [Aniket Raj](https://github.com/itsrajaniket) | 📅 **Updated:** April 2025
+---
 
 ## 📚 Curriculum Checklist
 - [x] HTML Boilerplate
@@ -459,4 +461,8 @@ That's the complete **HTML (Structure & Semantics)** section — **27 questions*
 ---
 
 `⬅️ Start` | [🏠 Home](../../README.md) | [Next: CSS ➡️](../../MERN_Study_Structure/01_Web_Development_Fundamentals/02_CSS/02_CSS.md)
-tals/02_CSS/02_CSS.md)
+
+---
+<div align='center'>
+  <img src='https://img.shields.io/badge/Curriculum_Designed_By-Aniket_Raj-007ACC?style=for-the-badge&logo=github&logoColor=white' />
+</div>
