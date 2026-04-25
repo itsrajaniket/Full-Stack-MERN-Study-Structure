@@ -105,5 +105,5 @@ graph LR
   <h3>🚀 Developed by <b>Aniket Raj</b></h3>
   <p>Full-Stack MERN Developer | Open to Collaborations</p>
   <a href='https://github.com/itsrajaniket'><img src='https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white' /></a>
-  <a href='https://www.linkedin.com/in/itsrajaniket/'><img src='https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white' /></a>
+  <a href='https://www.linkedin.com/in/itsaniketraj/'><img src='https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white' /></a>
 </div>
