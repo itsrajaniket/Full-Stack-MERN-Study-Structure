@@ -1,4 +1,103 @@
+<style>
+  /* 🖨️ Compact Black & White Print Optimization */
+  @media print, screen {
+    :root {
+      --text-main: #000000;
+      --text-muted: #444444;
+      --border-thick: 2px solid #000000;
+      --border-thin: 1px solid #888888;
+      --bg-light: #f4f4f4;
+    }
+
+    body {
+      background: #ffffff !important;
+      color: var(--text-main) !important;
+      font-family: "Segoe UI", "Calibri", sans-serif;
+      font-size: 10pt; /* Reduced from 11pt */
+      line-height: 1.4; /* Tightened from 1.5 */
+      margin: 0;
+    }
+
+    /* Compact Headers */
+    h1 { font-size: 20pt; margin-top: 10px; margin-bottom: 20px; border-bottom: 2px solid #000; padding-bottom: 5px; }
+    h2 { font-size: 15pt; page-break-before: always; margin-top: 1.5cm; border-bottom: 1px solid #000; padding-bottom: 3px; }
+    h3 { font-size: 12pt; page-break-after: avoid; border-left: 5px solid #000; padding-left: 10px; margin-top: 20px; background: #f0f0f0; padding-top: 5px; padding-bottom: 5px; }
+    
+    /* Sandwich Architecture Header Styling */
+    h4 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 2px;
+      margin-top: 15px;
+      margin-bottom: 8px;
+      color: #111;
+      text-transform: uppercase;
+      font-size: 9pt; /* Reduced from 10pt */
+      letter-spacing: 0.5px;
+    }
+
+    /* Code Blocks - More Compact */
+    pre {
+      background: #ffffff !important;
+      border: 1px solid #000 !important;
+      padding: 8px !important;
+      margin: 10px 0 !important;
+      border-radius: 0 !important;
+      overflow: visible !important;
+      white-space: pre-wrap !important;
+    }
+    code {
+      font-family: "Consolas", "Courier New", monospace !important;
+      font-size: 8.5pt !important; /* Reduced from 9.5pt */
+      color: #000 !important;
+    }
+
+    /* Lists & Spacing */
+    ul { padding-left: 18px; margin-top: 5px; }
+    li { margin-bottom: 3px; }
+    p { margin: 8px 0; }
+    strong { color: #000; }
+
+    /* Horizontal Rules */
+    hr {
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 15px 0;
+    }
+
+    /* Table of Contents - Compact 2-Column */
+    #table-of-contents + ul, 
+    nav + ul,
+    .toc-list {
+      column-count: 2;
+      font-size: 9pt;
+      column-gap: 30px;
+    }
+
+    /* Callout Boxes */
+    blockquote {
+      margin: 15px 0;
+      padding: 10px 15px;
+      border: 1px solid #000 !important;
+      border-left: 8px solid #000 !important;
+      background: #fff !important;
+    }
+
+    /* Page Setup */
+    @page {
+      margin: 1.5cm; /* Reduced from 2cm to save paper */
+      @bottom-right {
+        content: counter(page);
+        font-size: 8pt;
+      }
+    }
+  }
+
+  .no-print { display: none !important; }
+</style>
+
+
 # 🚀 MERN Stack Interview Study Kit
+
 
 # 📑 Table of Contents
 
@@ -231,7 +330,7 @@ Media queries are "IF" statements for CSS that trigger styles based on screen si
 
 Think of `var` like a **public announcement** in a building; everyone on the whole floor hears it. `let` and `const` are like **private whispers** inside a specific room; if you leave the room, you can't hear them anymore.
 
-`const` isn't "immutable"â€”it just means the "address" can't change. You can still change values *inside* a `const` array or object, but you can't point the variable to a totally new one.
+`const` isn't "immutable"—it just means the "address" can't change. You can still change values *inside* a `const` array or object, but you can't point the variable to a totally new one.
 
 ---
 
@@ -261,7 +360,7 @@ user.name = "Rajan"; // ✅ This is allowed (mutation)
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is the Temporal Dead Zone?** - It's the area at the start of a block where `let` and `const` exist but aren't initialized; accessing them throws an error.
 
@@ -271,7 +370,7 @@ user.name = "Rajan"; // ✅ This is allowed (mutation)
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking `const` objects are completely unchangeable (they are mutable, just not reassignable).
 
@@ -313,7 +412,7 @@ Imagine a teacher reading a list of students (declarations) before the class sta
 
 *   **`var`** is hoisted and set to `undefined`.
 
-*   **`let`/`const`** are hoisted but stay in the "Temporal Dead Zone"â€”you can't touch them yet.
+*   **`let`/`const`** are hoisted but stay in the "Temporal Dead Zone"—you can't touch them yet.
 
 ---
 
@@ -341,7 +440,7 @@ let age = 25;
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Are arrow functions hoisted?** - No, if they are assigned to `const` or `let`, they behave like variables and stay in the TDZ.
 
@@ -349,7 +448,7 @@ let age = 25;
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking `let` and `const` are not hoisted at all (they are, but you just can't access them).
 
@@ -405,7 +504,7 @@ console.log(null === undefined); // false
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **When would you use `==`?** - Rarely, but sometimes to check if a value is "null-ish" (checking both `null` and `undefined` at once).
 
@@ -413,7 +512,7 @@ console.log(null === undefined); // false
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Assuming `==` is faster (it actually might be slightly slower because it has to do conversion).
 
@@ -483,7 +582,7 @@ counter(); // 2
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can closures cause memory leaks?** - Yes, if they are not handled properly, they keep variables in memory that might no longer be needed.
 
@@ -491,7 +590,7 @@ counter(); // 2
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Confusing closures with just any nested function.
 
@@ -565,7 +664,7 @@ console.log("End");
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is the difference between Macrotasks and Microtasks?** - Microtasks (Promises) have higher priority and are executed as soon as the stack is empty, before any Macrotasks (setTimeout).
 
@@ -573,7 +672,7 @@ console.log("End");
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking `setTimeout(..., 0)` runs exactly at 0ms (it runs only after the stack is empty).
 
@@ -641,7 +740,7 @@ console.log("3");
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Why is Node.js called "Asynchronous"?** - Because its I/O operations (reading files, DB queries) don't block the main execution thread.
 
@@ -649,7 +748,7 @@ console.log("3");
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Trying to use the result of an async function immediately on the next line without `await` or `.then()`.
 
@@ -723,7 +822,7 @@ myPromise
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is Promise Chaining?** - Returning a promise from a `.then()` so you can attach another `.then()` to it, keeping code flat.
 
@@ -731,7 +830,7 @@ myPromise
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting to add a `.catch()`, which leads to "Unhandled Promise Rejection" errors.
 
@@ -801,7 +900,7 @@ async function fetchData() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What does an `async` function always return?** - It always returns a Promise, even if you return a simple value.
 
@@ -809,7 +908,7 @@ async function fetchData() {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting the `async` keyword but trying to use `await`.
 
@@ -871,7 +970,7 @@ console.log(typeof null);      // "object" (This is a famous JS bug!)
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is `null == undefined`?** - `true` (because they both represent "no value").
 
@@ -879,7 +978,7 @@ console.log(typeof null);      // "object" (This is a famous JS bug!)
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking `typeof null` is "null" (it returns "object").
 
@@ -951,7 +1050,7 @@ outside(); // Hi, undefined (this = global window, name doesn't exist there)
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How do arrow functions handle `this`?** - They don't have their own `this`; they use the `this` of the surrounding code (lexical scope).
 
@@ -959,7 +1058,7 @@ outside(); // Hi, undefined (this = global window, name doesn't exist there)
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using arrow functions for object methods (where they won't be able to access the object's properties via `this`).
 
@@ -983,7 +1082,7 @@ outside(); // Hi, undefined (this = global window, name doesn't exist there)
 
 #### ✅ The Core Answer
 
-These methods are used to explicitly set the `this` context for a function. `call()` and `apply()` invoke the function immediatelyâ€”`call` takes arguments individually, while `apply` takes them as an array. `bind()` does not invoke the function immediately; instead, it returns a new function with the `this` context fixed.
+These methods are used to explicitly set the `this` context for a function. `call()` and `apply()` invoke the function immediately—`call` takes arguments individually, while `apply` takes them as an array. `bind()` does not invoke the function immediately; instead, it returns a new function with the `this` context fixed.
 
 ---
 
@@ -1033,7 +1132,7 @@ boundGreet(); // Aniket from Delhi, India
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Which one is better for performance?** - `call` is slightly faster than `apply` because it doesn't have to handle array overhead, but the difference is negligible.
 
@@ -1041,7 +1140,7 @@ boundGreet(); // Aniket from Delhi, India
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Confusing `call` (Comma separated) and `apply` (Array).
 
@@ -1101,7 +1200,7 @@ console.log(dog.eats); // true (found on prototype: animal)
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is the end of the prototype chain?** - `Object.prototype`'s prototype is `null`.
 
@@ -1109,7 +1208,7 @@ console.log(dog.eats); // true (found on prototype: animal)
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking JavaScript classes work exactly like Java classes (JS classes are just "sugar" over prototypes).
 
@@ -1171,7 +1270,7 @@ const sum = nums.reduce((acc, n) => acc + n, 0); // 10
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What happens if you don't provide an initial value to `reduce`?** - It uses the first element of the array as the initial accumulator value and starts the loop from the second element.
 
@@ -1179,7 +1278,7 @@ const sum = nums.reduce((acc, n) => acc + n, 0); // 10
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting that these methods return a *new* array and don't modify the old one.
 
@@ -1237,7 +1336,7 @@ const chain = arr.map(x => x * 2).filter(x => x > 2); // [4, 6]
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Which one is faster?** - `forEach` is technically a tiny bit faster, but `map` is preferred in React/Modern JS for its functional, immutable nature.
 
@@ -1245,7 +1344,7 @@ const chain = arr.map(x => x * 2).filter(x => x > 2); // [4, 6]
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using `map` and not assigning it to a variable (it's a waste of memory; use `forEach`).
 
@@ -1307,7 +1406,7 @@ document.querySelector('#parent-list').addEventListener('click', (e) => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How do you stop an event from bubbling?** - Use `e.stopPropagation()`.
 
@@ -1315,7 +1414,7 @@ document.querySelector('#parent-list').addEventListener('click', (e) => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Not checking `e.target` in delegation, which might cause the parent's logic to run when you click on whitespace between children.
 
@@ -1379,7 +1478,7 @@ const processChange = debounce(() => console.log('Searching...'), 500);
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Which one is better for a window resize event?** - Throttling, because you want the UI to update periodically while the user is resizing, not just at the very end.
 
@@ -1387,7 +1486,7 @@ const processChange = debounce(() => console.log('Searching...'), 500);
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Confusing the two (remember: Debounce = wait for pause, Throttle = steady rhythm).
 
@@ -1455,7 +1554,7 @@ console.log(original.b.c); // 99 (Original safe! ✅)
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is the problem with `JSON.stringify` for deep copying?** - it loses functions, `undefined`, and special objects like Dates or RegEx.
 
@@ -1463,7 +1562,7 @@ console.log(original.b.c); // 99 (Original safe! ✅)
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Assuming the Spread operator (`...`) creates a deep copy.
 
@@ -1503,7 +1602,7 @@ Think of a **Security Guard** at a club:
 
 *   If your name is on that list, you can't enter (`if` block doesn't run).
 
-*   If your name is NOT on the listâ€”even if it's a weird name like `[]` (empty array) or `{}` (empty object)â€”you are allowed in because you are "Truthy".
+*   If your name is NOT on the list—even if it's a weird name like `[]` (empty array) or `{}` (empty object)—you are allowed in because you are "Truthy".
 
 ---
 
@@ -1521,7 +1620,7 @@ if (0)  console.log("True"); else console.log("False"); // False
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Are empty arrays `[]` and objects `{}` truthy or falsy?** - They are **Truthy**. This is a common trap!
 
@@ -1529,7 +1628,7 @@ if (0)  console.log("True"); else console.log("False"); // False
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Checking `if (myArray)` to see if an array is empty (it won't work because `[]` is truthy). Use `if (myArray.length)` instead.
 
@@ -1595,7 +1694,7 @@ for (let fruit of fruits) console.log(fruit); // Apple, Banana
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Which one is best for objects?** - `for...in` is designed for objects.
 
@@ -1603,7 +1702,7 @@ for (let fruit of fruits) console.log(fruit); // Apple, Banana
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using `for...in` on an array when they want the values (this can be slow and include extra properties).
 
@@ -1663,7 +1762,7 @@ Before ES6 `let` and `const`, this was the only way to create block-level scope.
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Is IIFE still needed today?** - Less so, because we have ES Modules and block-scoping (`let`/`const`), but it's still useful for initialization logic that shouldn't be reused.
 
@@ -1671,7 +1770,7 @@ Before ES6 `let` and `const`, this was the only way to create block-level scope.
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting the parentheses around the function or at the end (the `()` that calls it).
 
@@ -1733,7 +1832,7 @@ setTimeout(() => clearInterval(interval), 5000);
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is better: `setInterval` or recursive `setTimeout`?** - Recursive `setTimeout` is often better because it ensures the previous execution is finished *before* the next timer starts, preventing "stacking" of calls if the code takes longer than the interval.
 
@@ -1741,7 +1840,7 @@ setTimeout(() => clearInterval(interval), 5000);
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting to store the ID and clear the interval, leading to memory leaks and infinite loops.
 
@@ -1827,7 +1926,7 @@ add(5); // Cache Hit!
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Does memoization work for all functions?** - No, it only works for **Pure Functions** where the output depends solely on the input.
 
@@ -1835,7 +1934,7 @@ add(5); // Cache Hit!
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using memoization for simple, fast functions (this actually slows them down due to the overhead of checking the cache).
 
@@ -1919,7 +2018,7 @@ async function run() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What happens if an async error is not caught in Node.js?** - The process might crash or emit a warning. In modern Node.js, unhandled rejections are treated as fatal errors.
 
@@ -1927,7 +2026,7 @@ async function run() {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking a regular `try...catch` will catch errors inside a `setTimeout` (it won't).
 
@@ -1999,7 +2098,7 @@ console.log(double(5)); // 10
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Is `map` a higher-order function?** - Yes, because it takes a callback function as an argument.
 
@@ -2007,7 +2106,7 @@ console.log(double(5)); // 10
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Confusing the HOF with the Callback (The HOF is the "parent", the callback is the "child" passed in).
 
@@ -2087,7 +2186,7 @@ outer();
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can a parent scope access variables from a child scope?** - No, the scope chain only goes **up**, never down.
 
@@ -2095,7 +2194,7 @@ outer();
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking that variables are available everywhere (Global variable pollution).
 
@@ -2165,7 +2264,7 @@ const obj = {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can arrow functions be used as constructors?** - No, they cannot be used with the `new` keyword and don't have a `prototype` property.
 
@@ -2173,7 +2272,7 @@ const obj = {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Trying to use `this` inside an arrow function to refer to an object it's a part of.
 
@@ -2241,7 +2340,7 @@ console.log(first, second); // Red Green
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How do you set a default value in destructuring?** - `const { name = "Guest" } = user;`
 
@@ -2249,7 +2348,7 @@ console.log(first, second); // Red Green
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Trying to destructure from `null` or `undefined` (this will crash the app).
 
@@ -2317,7 +2416,7 @@ console.log(sum(1, 2, 3)); // 6
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you use the rest parameter in the middle of a function argument list?** - No, the rest parameter must always be the **last** argument in the list.
 
@@ -2325,7 +2424,7 @@ console.log(sum(1, 2, 3)); // 6
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Mixing up the names (Spread vs Rest).
 
@@ -2395,7 +2494,7 @@ string.`;
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you put logic inside `${}`?** - Yes, you can put any valid JS expression, like `${age > 18 ? 'Adult' : 'Minor'}`.
 
@@ -2403,7 +2502,7 @@ string.`;
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Confusing backticks (`` ` ``) with single quotes (`'`).
 
@@ -2463,7 +2562,7 @@ welcome("Aniket"); // Good Day, Aniket!
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What happens if you pass `null` to a parameter with a default value?** - `null` is a value, so it will **not** trigger the default. Only `undefined` triggers the default.
 
@@ -2471,7 +2570,7 @@ welcome("Aniket"); // Good Day, Aniket!
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking that passing `null` will trigger the default (it doesn't).
 
@@ -2549,7 +2648,7 @@ class PersonClass {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you call a class without `new`?** - No, classes throw a `TypeError` if called without `new`, whereas constructor functions might just return `undefined`.
 
@@ -2557,7 +2656,7 @@ class PersonClass {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking JS has "real" classes like Java (it's still prototypes!).
 
@@ -2619,7 +2718,7 @@ import { useState } from 'react'; // Named import
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you use `import` in a regular Node.js file?** - Yes, by either using the `.mjs` extension or setting `"type": "module"` in your `package.json`.
 
@@ -2627,7 +2726,7 @@ import { useState } from 'react'; // Named import
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Mixing `require` and `import` in the same file (avoid this!).
 
@@ -2689,7 +2788,7 @@ import multiply, { add, sub } from './utils';
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can a file have both?** - Yes, but usually, it's better for clarity to stick to one style or use default for the main component and named for utilities.
 
@@ -2697,7 +2796,7 @@ import multiply, { add, sub } from './utils';
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Trying to use curly braces for a default import (or vice versa).
 
@@ -2757,7 +2856,7 @@ console.log(user?.address?.city); // ✅ undefined (No crash)
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Does it work for functions?** - Yes, you can use `obj.someMethod?.()` to call a function only if it exists.
 
@@ -2765,7 +2864,7 @@ console.log(user?.address?.city); // ✅ undefined (No crash)
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Overusing it everywhere (don't use it if you *expect* the data to be there; it might hide bugs).
 
@@ -2823,7 +2922,7 @@ console.log(val1, val2); // 10, 0
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **When should I use `✅`?** - Always use it for default values unless you specifically want to treat `""` or `0` as "missing" data.
 
@@ -2831,7 +2930,7 @@ console.log(val1, val2); // 10, 0
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using `||` for configuration objects where `false` or `0` are valid settings, accidentally overriding them with defaults.
 
@@ -2891,7 +2990,7 @@ console.log(myMap.size); // 2
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **When should you use an Object instead of a Map?** - Use Objects for simple data structures, JSON data, or when you need logic (methods) inside the structure.
 
@@ -2899,7 +2998,7 @@ console.log(myMap.size); // 2
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Trying to access Map values using dot notation (`map.key`) instead of the `.get(key)` method.
 
@@ -2963,7 +3062,7 @@ const arr = [...uniqueNums];
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How do you add or remove items from a Set?** - Use `.add(value)` and `.delete(value)`.
 
@@ -2971,7 +3070,7 @@ const arr = [...uniqueNums];
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking `Set` keeps track of frequency (it doesn't; it just knows if it's there or not).
 
@@ -3037,7 +3136,7 @@ fetchUser(1)
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What happens if you don't return anything from a `.then()`?** - The next `.then()` will receive `undefined`.
 
@@ -3045,7 +3144,7 @@ fetchUser(1)
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting to `return` the Promise inside `.then()`, causing the chain to "break" or run out of order.
 
@@ -3115,7 +3214,7 @@ const result = arr.flatMap(x => [x, x * 2]); // [1, 2, 2, 4, 3, 6]
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is the difference between `find` and `filter`?** - `find` returns only the first match; `filter` returns an array of ALL matches.
 
@@ -3123,7 +3222,7 @@ const result = arr.flatMap(x => [x, x * 2]); // [1, 2, 2, 4, 3, 6]
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using `filter` when they only need one specific item (using `find` is more efficient).
 
@@ -3185,7 +3284,7 @@ button.onclick = async () => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How is this used in React?** - Through `React.lazy()` and `Suspense`.
 
@@ -3193,7 +3292,7 @@ button.onclick = async () => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using dynamic imports for everything (over-splitting can actually slow things down because of too many network requests).
 
@@ -3257,7 +3356,7 @@ function Welcome() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Is React a Framework or a Library?** - It's a Library. It only handles the "View" layer. You need other libraries for routing, state management, etc.
 
@@ -3265,7 +3364,7 @@ function Welcome() {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking React is a full framework like Angular.
 
@@ -3325,7 +3424,7 @@ The "Glue and Tear" is much faster than reprinting the whole book.
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Why is the real DOM slow?** - Because every update triggers a "Reflow" and "Repaint" of the entire layout, which is computationally expensive.
 
@@ -3333,7 +3432,7 @@ The "Glue and Tear" is much faster than reprinting the whole book.
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Saying the VDOM is faster than the DOM (It's not; it's an extra layer. It's the *process* of minimizing updates that makes the overall app feel faster).
 
@@ -3391,7 +3490,7 @@ const element = React.createElement('h1', { className: 'title' }, 'Hello');
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you use expressions in JSX?** - Yes, using curly braces `{}`: `<h1>{user.name}</h1>`.
 
@@ -3399,7 +3498,7 @@ const element = React.createElement('h1', { className: 'title' }, 'Hello');
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking the browser can read JSX directly (it can't; it must be compiled).
 
@@ -3475,7 +3574,7 @@ class MyComponent extends React.Component {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Are class components deprecated?** - No, but they are no longer recommended for new projects.
 
@@ -3483,7 +3582,7 @@ class MyComponent extends React.Component {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking you *can't* do state in functional components (you can, with `useState`).
 
@@ -3551,7 +3650,7 @@ function Child(props) {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can a child change its props?** - No, but it can call a function passed from the parent via props to ask the parent to change its state.
 
@@ -3559,7 +3658,7 @@ function Child(props) {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Trying to modify props inside a child component.
 
@@ -3623,7 +3722,7 @@ function Child({ name, onUpdate }) {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is the benefit of one-way data flow?** - It makes it very easy to track "Who changed this data?" because there is only one source of truth.
 
@@ -3631,7 +3730,7 @@ function Child({ name, onUpdate }) {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking they can't send data back to a parent (they can, just through functions).
 
@@ -3697,7 +3796,7 @@ const handleSubmit = () => console.log(inputRef.current.value);
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **When would you use uncontrolled components?** - For non-React libraries integration, or simple forms where you don't need real-time validation.
 
@@ -3705,7 +3804,7 @@ const handleSubmit = () => console.log(inputRef.current.value);
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Mixing both (e.g., providing a `value` without an `onChange`, which makes the input read-only).
 
@@ -3771,7 +3870,7 @@ return (
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What happens if you don't provide a key?** - React will use the array index by default and show a warning in the console.
 
@@ -3779,7 +3878,7 @@ return (
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using `Math.random()` as a key.
 
@@ -3845,7 +3944,7 @@ If your key was your **Name**, it wouldn't matter where you stood in line; you'd
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Is it *ever* okay to use the index?** - Only if the list is **static** (never changes, never re-orders) and the items have no unique IDs.
 
@@ -3853,7 +3952,7 @@ If your key was your **Name**, it wouldn't matter where you stood in line; you'd
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Ignoring the console warning and using index just to make the warning go away.
 
@@ -3935,7 +4034,7 @@ return (
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can Fragments have keys?** - Yes, but only if you use the full `<React.Fragment key={id}>` syntax. The short `<>...</>` syntax cannot have keys.
 
@@ -3943,7 +4042,7 @@ return (
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Adding `<div>` everywhere "just because," which leads to "Div Soup" and messy CSS.
 
@@ -4013,7 +4112,7 @@ function Welcome({ isLoggedIn }) {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What happens if you return `null` from a component?** - React will render nothing for that component, effectively "hiding" it from the UI.
 
@@ -4021,9 +4120,9 @@ function Welcome({ isLoggedIn }) {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
-*   Using `0 && <Component />` â€” If the condition is the number `0`, React will actually render the `0` on the screen! Use `!!condition && ...` or `condition > 0 && ...` to be safe.
+*   Using `0 && <Component />` — If the condition is the number `0`, React will actually render the `0` on the screen! Use `!!condition && ...` or `condition > 0 && ...` to be safe.
 
 *   Making the ternary logic too complex, which makes the code unreadable (better to move complex logic to a separate variable or function).
 
@@ -4093,7 +4192,7 @@ function Child({ user }) {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How do you stop prop drilling?** - By using React Context API, custom hooks, or state management libraries like Redux/Zustand.
 
@@ -4101,7 +4200,7 @@ function Child({ user }) {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking any prop passing is "prop drilling" (it's only a problem when it goes through *many* layers).
 
@@ -4167,7 +4266,7 @@ const DashboardWithAuth = withAuth(Dashboard);
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Are HOCs still common?** - They are less common now because **Custom Hooks** can solve many of the same problems more simply.
 
@@ -4175,7 +4274,7 @@ const DashboardWithAuth = withAuth(Dashboard);
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using HOCs inside the `render` method (this causes the component to unmount and remount on every render). Always define HOCs *outside* the component.
 
@@ -4247,7 +4346,7 @@ class ErrorBoundary extends React.Component {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you write an Error Boundary as a functional component?** - No, currently Error Boundaries *must* be class components because the required lifecycle methods don't have hook equivalents yet.
 
@@ -4255,7 +4354,7 @@ class ErrorBoundary extends React.Component {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking Error Boundaries catch *every* error in the app (they only catch errors during the **rendering** phase of their children).
 
@@ -4335,7 +4434,7 @@ The "pop out and replace" is reconciliation.
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is "Fiber"?** - It's React's current reconciliation engine that can pause and resume work, making the UI feel smoother during heavy updates.
 
@@ -4343,7 +4442,7 @@ The "pop out and replace" is reconciliation.
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking reconciliation means React doesn't use the DOM at all (it *does* update the DOM, it just does it very selectively).
 
@@ -4411,7 +4510,7 @@ function Parent() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is the alternative to lifting state up?** - Using Context API or a global state manager like Redux, but lifting state up is preferred for smaller groups of components.
 
@@ -4419,7 +4518,7 @@ function Parent() {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Keeping duplicate state in two siblings and trying to sync them manually (very hard to keep bug-free).
 
@@ -4495,7 +4594,7 @@ class MyComponent extends React.PureComponent {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Does `React.memo` check state changes?** - No, `React.memo` only checks for **prop changes**. If the component has its own internal state, it will still re-render when that state changes.
 
@@ -4503,7 +4602,7 @@ class MyComponent extends React.PureComponent {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Wrapping *every* component in `memo` (this actually slows down the app because the "comparison" itself takes time). Only use it for components that render often with the same props.
 
@@ -4571,7 +4670,7 @@ function Modal({ children }) {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Does event bubbling still work through portals?** - Yes! Even though the component is physically elsewhere in the DOM, events will still bubble up to its React parents.
 
@@ -4579,7 +4678,7 @@ function Modal({ children }) {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting to clean up the portal or handle its visibility correctly.
 
@@ -4637,7 +4736,7 @@ Once you go to the "Real Championship" (**Production**), the training mode is tu
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Does `StrictMode` affect production performance?** - No, it is completely stripped out of the production build.
 
@@ -4645,7 +4744,7 @@ Once you go to the "Real Championship" (**Production**), the training mode is tu
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking the double-render is a bug in their code.
 
@@ -4719,7 +4818,7 @@ useEffect(() => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What are the class component equivalents?** - `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`.
 
@@ -4727,7 +4826,7 @@ useEffect(() => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Doing heavy work (like API calls) on every render instead of just during the mounting phase.
 
@@ -4793,7 +4892,7 @@ function Counter() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you use Hooks in class components?** - No, Hooks only work inside functional components or custom hooks.
 
@@ -4801,7 +4900,7 @@ function Counter() {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking Hooks are a separate library (they are built into React).
 
@@ -4879,7 +4978,7 @@ useEffect(() => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Why does React need the order to be the same?** - Because React doesn't use names for state; it internally stores hooks in an array and uses the index to find them.
 
@@ -4887,7 +4986,7 @@ useEffect(() => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Wrapping a `useEffect` or `useState` in an `if` block.
 
@@ -4951,7 +5050,7 @@ const increment = () => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What happens if you update state with the same value?** - React will see that the value hasn't changed and will skip the re-render (optimization).
 
@@ -4959,9 +5058,9 @@ const increment = () => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
-*   Trying to change the state variable directly (`count = 5`) â€” this won't trigger a re-render.
+*   Trying to change the state variable directly (`count = 5`) — this won't trigger a re-render.
 
 *   Not using the "functional update" (`prev => prev + 1`) when the new state depends on the old one, which can cause bugs in async code.
 
@@ -5023,7 +5122,7 @@ setUser({ ...user, name: "Rajan" }); // Creates a BRAND NEW object
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How do you update an array immutably?** - Using the spread operator `[...oldArray, newItem]` or methods like `.filter()` and `.map()`.
 
@@ -5031,7 +5130,7 @@ setUser({ ...user, name: "Rajan" }); // Creates a BRAND NEW object
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using `push()` or `splice()` on state arrays (these mutate the original). Use `concat()` or spread instead.
 
@@ -5105,7 +5204,7 @@ useEffect(() => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What happens if you omit the dependency array?** - The effect will run after **every single render**, which can lead to performance issues or infinite loops.
 
@@ -5113,7 +5212,7 @@ useEffect(() => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting the dependency array and causing an infinite loop (especially if the effect updates state).
 
@@ -5177,7 +5276,7 @@ useEffect(() => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What happens if you use an object in the dependency array?** - Because objects are compared by reference, the effect might run on every render if the object is recreated. Use `useMemo` or primitive values instead.
 
@@ -5185,7 +5284,7 @@ useEffect(() => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting the dependency array and causing an infinite loop when the effect updates the same state it depends on.
 
@@ -5253,7 +5352,7 @@ useEffect(() => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **When exactly does the cleanup run?** - It runs right before the component is removed, AND right before the effect runs again (if dependencies changed).
 
@@ -5261,7 +5360,7 @@ useEffect(() => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Starting a `window.addEventListener` but forgetting to `removeEventListener` in the cleanup.
 
@@ -5333,7 +5432,7 @@ useEffect(() => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you make the `useEffect` function itself `async`?** - No, because `useEffect` must return either a cleanup function or `undefined`. An `async` function returns a Promise, which would break the hook.
 
@@ -5341,9 +5440,9 @@ useEffect(() => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
-*   Making the effect `async` directly: `useEffect(async () => { ... })` â€” this is a huge error!
+*   Making the effect `async` directly: `useEffect(async () => { ... })` — this is a huge error!
 
 *   Forgetting to handle loading and error states while fetching.
 
@@ -5419,7 +5518,7 @@ function Toolbar() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Does `useContext` trigger re-renders?** - Yes! Every component using `useContext` will re-render whenever the `value` in the `Provider` changes.
 
@@ -5427,7 +5526,7 @@ function Toolbar() {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using Context for *everything* (keep it for truly global data).
 
@@ -5493,7 +5592,7 @@ return <input ref={inputRef} />;
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is the difference between `useRef` and a regular variable?** - A regular variable inside a component is "reset" every time the component re-renders. A `useRef` value stays the same.
 
@@ -5501,7 +5600,7 @@ return <input ref={inputRef} />;
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Trying to use `useRef` to trigger a re-render (it won't work!).
 
@@ -5619,7 +5718,7 @@ const [state, dispatch] = useReducer(reducer, { count: 0 });
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Is `useReducer` faster than `useState`?** - No, but it makes the code much cleaner and easier to debug for large components.
 
@@ -5627,7 +5726,7 @@ const [state, dispatch] = useReducer(reducer, { count: 0 });
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using `useReducer` for simple `true/false` toggles (that's overkill; use `useState`).
 
@@ -5683,7 +5782,7 @@ const result = useMemo(() => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Should you use `useMemo` for everything?** - No! The hook itself has a small overhead. If the calculation is simple (like `1 + 1`), `useMemo` actually makes the app slower.
 
@@ -5691,7 +5790,7 @@ const result = useMemo(() => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using `useMemo` for simple logic.
 
@@ -5749,7 +5848,7 @@ const handleClick = useCallback(() => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Does `useCallback` make the function run faster?** - No, it only helps with child component performance by stabilizing the reference.
 
@@ -5757,7 +5856,7 @@ const handleClick = useCallback(() => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using `useCallback` everywhere without `React.memo` on the child. (It won't save any performance!).
 
@@ -5885,7 +5984,7 @@ const width = useWindowSize();
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Do custom hooks share state?** - N✅ Every time you use a custom hook, all state and effects inside it are completely isolated to that specific component.
 
@@ -5893,7 +5992,7 @@ const width = useWindowSize();
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking custom hooks are for sharing data (use Context for that!).
 
@@ -5973,15 +6072,15 @@ const [isModalOpen, toggleModal] = useToggle();
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
-1. **Can custom hooks return objects?** - Yes, they can return arrays, objects, or single valuesâ€”whatever is most convenient for the component using it.
+1. **Can custom hooks return objects?** - Yes, they can return arrays, objects, or single values—whatever is most convenient for the component using it.
 
 2. **Can a custom hook call another custom hook?** - Absolutely! You can compose hooks together to build very powerful logic.
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Putting UI (JSX) inside a custom hook (Hooks should only handle **Logic**, not UI).
 
@@ -6109,7 +6208,7 @@ const handleChange = (e) => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is `isPending`?** - It's a true/false value you can use to show a loading spinner *only* for the transition part of the UI.
 
@@ -6117,7 +6216,7 @@ const handleChange = (e) => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Wrapping every state update in `startTransition`. (Only use it for heavy updates that slow down the UI).
 
@@ -6195,7 +6294,7 @@ useEffect(() => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How does React know I broke the rule?** - React keeps a hidden counter for hooks. If the counter at the end of the render doesn't match the counter from the start, it throws an error.
 
@@ -6203,7 +6302,7 @@ useEffect(() => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking they can "optimize" by not calling a hook when it's not needed.
 
@@ -6275,7 +6374,7 @@ function App() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you have multiple Contexts?** - Yes, you can nest multiple Providers to handle different types of data (e.g., `ThemeContext`, `UserContext`).
 
@@ -6283,7 +6382,7 @@ function App() {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using Context for *every* piece of data (keep local state local!).
 
@@ -6359,7 +6458,7 @@ const theme = useContext(ThemeContext);
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is the "Default Value" in `createContext`?** - It's the value used if a component tries to consume the context but is NOT wrapped inside a Provider.
 
@@ -6367,7 +6466,7 @@ const theme = useContext(ThemeContext);
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting to pass the `value` prop to the Provider.
 
@@ -6429,7 +6528,7 @@ const [user, setUser] = useState({ name: 'Aniket', theme: 'dark' });
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How do you fix the re-render issue?** - By "Context Splitting" (creating separate contexts for separate data) or using `useMemo` to wrap the value.
 
@@ -6437,7 +6536,7 @@ const [user, setUser] = useState({ name: 'Aniket', theme: 'dark' });
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Putting the entire app state (hundreds of values) into one single Context.
 
@@ -6567,7 +6666,7 @@ function reducer(state, action) {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Why do we need a "Single Source of Truth"?** - It makes debugging much easier because you only have one place to look for the current state of the entire app.
 
@@ -6575,7 +6674,7 @@ function reducer(state, action) {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking Redux is "React-only" (It's a JS library that can be used with any framework!).
 
@@ -6653,7 +6752,7 @@ store.dispatch(addItem);
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can an action have multiple types?** - No, each action should have a unique `type` string.
 
@@ -6661,7 +6760,7 @@ store.dispatch(addItem);
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting to return the `state` by default in a reducer (this will cause your state to become `undefined`!).
 
@@ -6723,7 +6822,7 @@ RTK "pre-makes" the difficult parts of Redux for you.
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Does RTK use Immer?** - Yes! This is why you can write "mutating" code like `state.count++` in RTK slices; Immer automatically converts it into a safe, immutable update.
 
@@ -6731,7 +6830,7 @@ RTK "pre-makes" the difficult parts of Redux for you.
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Still using "Vanilla Redux" in 2024 (Always use RTK for new projects!).
 
@@ -6771,7 +6870,7 @@ Imagine a **Pizza**.
 
 The entire Pizza is your **Redux Store**.
 
-A **Slice** is exactly what it sounds likeâ€”one piece of the pizza.
+A **Slice** is exactly what it sounds like—one piece of the pizza.
 
 *   The "Pepperoni Slice" handles everything related to pepperoni.
 
@@ -6813,7 +6912,7 @@ export default counterSlice.reducer;
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What does the `name` property do?** - It acts as a prefix for the generated action types (e.g., `counter/increment`).
 
@@ -6821,7 +6920,7 @@ export default counterSlice.reducer;
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Trying to define actions manually (RTK does it for you!).
 
@@ -6883,7 +6982,7 @@ function Profile() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Does `useSelector` cause re-renders?** - Only if the value returned by the selector changes. It uses strict `===` equality by default.
 
@@ -6891,7 +6990,7 @@ function Profile() {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Writing complex logic inside the selector (keep it simple, or use `reselect` for expensive stuff).
 
@@ -6933,7 +7032,7 @@ Think of a **Remote Control**.
 
 *   **`useDispatch`**: The **Power in the Remote**.
 
-Without `useDispatch`, you can look at the remote (Action) all day, but nothing happens. When you call `dispatch(action)`, it's like **pressing the button**â€”the signal is sent to the TV, and the channel changes.
+Without `useDispatch`, you can look at the remote (Action) all day, but nothing happens. When you call `dispatch(action)`, it's like **pressing the button**—the signal is sent to the TV, and the channel changes.
 
 ---
 
@@ -6965,7 +7064,7 @@ function CounterButton() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Does `useDispatch` change between renders?** - No, the dispatch function instance is stable and will never change for the life of the component.
 
@@ -6973,7 +7072,7 @@ function CounterButton() {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Calling the action creator but forgetting to wrap it in `dispatch` (e.g., just writing `increment()` instead of `dispatch(increment())`).
 
@@ -7037,7 +7136,7 @@ The letter eventually reaches the mailbox, but the Post Office did extra work in
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How do you add middleware to Redux Toolkit?** - Using the `middleware` option in `configureStore`.
 
@@ -7045,7 +7144,7 @@ The letter eventually reaches the mailbox, but the Post Office did extra work in
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Thinking middleware changes the reducer (It doesn't! It only looks at or modifies the *action* before it gets there).
 
@@ -7115,7 +7214,7 @@ const fetchUser = (id) => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Is Thunk built into Redux Toolkit?** - Yes! RTK includes Thunk by default, so you don't need to install it separately.
 
@@ -7123,7 +7222,7 @@ const fetchUser = (id) => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Trying to use `await` inside a regular action creator (it won't work!).
 
@@ -7197,7 +7296,7 @@ extraReducers: (builder) => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Why do we use `extraReducers`?** - Because the thunk generates actions *outside* the slice's normal reducers. `extraReducers` allows the slice to respond to those external actions.
 
@@ -7205,7 +7304,7 @@ extraReducers: (builder) => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Defining the thunk logic *inside* the `createSlice` object (it must be defined outside).
 
@@ -7255,7 +7354,7 @@ extraReducers: (builder) => {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Putting *everything* in Redux (Global). This makes the app slow and the code hard to read.
 
@@ -7319,7 +7418,7 @@ const store = configureStore({ preloadedState: savedState });
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is `redux-persist`?** - It's a library that handles all the saving and loading logic for you, including "Blacklisting" (choosing which data NOT to save).
 
@@ -7327,7 +7426,7 @@ const store = configureStore({ preloadedState: savedState });
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Trying to store huge amounts of data (like images) in LocalStorage (it has a 5MB limit!).
 
@@ -7395,7 +7494,7 @@ Imagine a **Large Museum**.
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is the difference between version 5 and version 6?** - v6 is the current standard. It introduced `<Routes>` instead of `<Switch>`, changed `component` to `element`, and made nested routing much easier.
 
@@ -7403,7 +7502,7 @@ Imagine a **Large Museum**.
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Using regular `<a>` tags instead of `<Link>` (using `<a>` will cause a full page refresh and ruin the SPA experience!).
 
@@ -7515,7 +7614,7 @@ Imagine a **Menu** in a restaurant.
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you use `Link` for external websites?** - N✅ Use regular `<a>` tags for external sites (like Google.com) and `<Link>` only for pages inside your own app.
 
@@ -7585,7 +7684,7 @@ function LoginPage() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How do you go "Back"?** - Use `navigate(-1)`.
 
@@ -7593,7 +7692,7 @@ function LoginPage() {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Trying to use `useNavigate` inside the main body of the component (It should be used inside functions or `useEffect`).
 
@@ -7661,7 +7760,7 @@ function User() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you have multiple params?** - Yes: `/blog/:category/:slug`. `useParams` will return `{ category: '...', slug: '...' }`.
 
@@ -7669,7 +7768,7 @@ function User() {
 
 ---
 
-#### âš ï¸ Common Mistakes Freshers Make
+#### ⚠️ Common Mistakes Freshers Make
 
 *   Forgetting the colon `:` in the Route path (If you write `/user/id`, it will only match the literal word "id").
 
@@ -7725,7 +7824,7 @@ console.log(location.search);   // e.g., "?sort=price"
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **How do you pass data via `state`?** - `navigate('/target', { state: { from: 'home' } })`. You can then read it using `location.state`.
 
@@ -7811,7 +7910,7 @@ function ProtectedRoute({ children }) {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is `replace` in `<Navigate />`?** - It prevents the "Back Button Loop" where the user hits back and is immediately redirected again.
 
@@ -7877,7 +7976,7 @@ If a piece of mail doesn't fit into the 3 specific boxes, it falls into the myst
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you have nested 404 pages?** - Yes, if you use nested routes, a `*` path inside a child `<Routes>` will catch only unmatched paths within that section.
 
@@ -7957,7 +8056,7 @@ function DashboardLayout() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What is an "Index Route"?** - A child route with the `index` prop instead of a `path`. it's the default child shown when the user is at the exact parent URL (e.g., `/dashboard`).
 
@@ -8029,7 +8128,7 @@ function Layout() {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you pass data to the `Outlet`?** - Yes! You can use the `context` prop: `<Outlet context={userData} />`. Child components can then read this using the `useOutletContext()` hook.
 
@@ -8095,7 +8194,7 @@ Imagine JavaScript is a **Talented Chef**.
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you run `alert()` in Node.js?** - No, `alert()` is a browser feature. In Node, you use `console.log()` to see output in the terminal.
 
@@ -8163,7 +8262,7 @@ console.log("End");
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **If Node is single-threaded, how does it use multi-core CPUs?** - You can use the `cluster` module or `worker_threads` to run multiple instances of Node on different CPU cores.
 
@@ -8427,7 +8526,7 @@ Imagine **Watching a Movie**.
 
 *   **With Streams**: This is **YouTube/Netflix**. You download a tiny piece (chunk), watch it, and then download the next piece. You only need a tiny bit of memory, and you can start watching instantly.
 
-Node.js streams work exactly like video streamingâ€”they handle data "bit by bit."
+Node.js streams work exactly like video streaming—they handle data "bit by bit."
 
 ---
 
@@ -8513,7 +8612,7 @@ fs.readFile('message.txt', 'utf8', (err, data) => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Should you use the Sync or Async methods?** - Always use **Async** (like `readFile`) for web servers so you don't block other users. Only use **Sync** (like `readFileSync`) for small scripts or during server startup.
 
@@ -9059,7 +9158,7 @@ app.listen(3000, () => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What are `req` and `res`?** - `req` (Request) is the data coming **from** the user; `res` (Response) is the data the server sends **back** to the user.
 
@@ -9183,7 +9282,7 @@ app.use((req, res, next) => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What happens if you forget to call `next()`?** - The browser will just keep loading forever ("spinning") because the request is stuck inside the middleware.
 
@@ -9301,7 +9400,7 @@ app.get('/user/:id', (req, res) => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **Can you have multiple params?** - Yes: `/products/:category/:id`.
 
@@ -9527,7 +9626,7 @@ app.post('/login', (req, res) => {
 
 ---
 
-#### 🔐„ Likely Follow-up Questions
+#### 🔐 Likely Follow-up Questions
 
 1. **What if the data is sent from an HTML Form?** - You need `express.urlencoded({ extended: true })` instead.
 
